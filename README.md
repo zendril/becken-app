@@ -30,6 +30,7 @@ Committing these files does not itself enable Pages or change domain DNS.
 
 ## Content maintenance
 
+- Lead with **Free to use. No subscription. Fully offline.** in the landing page and search/social descriptions. Offline use includes routines, workout logging, history, and local backup/restore. Optional cloud storage needs a connection; do not imply cloud transfers work offline.
 - Both Play buttons in `index.html` target `https://play.google.com/store/apps/details?id=app.becken.android`, based on the app's selected package ID. Access is currently limited to invited testers; send testers the Play Console opt-in link separately. The live listing was not verified from this environment. Update the two availability notes when public distribution begins.
 - `privacy/index.html` reflects the app's current local storage and manual backups, disabled automatic Drive integration, and this static site's hosting. Reconcile it with any future changes to billing, analytics, cloud features, or support handling before releasing them.
 - Branding uses the implemented Momentum logo and palette from `zendril/becken/docs/brand.md`: orange `#FF7A1A`, midnight `#081722`, paper `#FFF8F3`, and deep orange `#A44000`. It does not claim to recover the original concept artwork.
