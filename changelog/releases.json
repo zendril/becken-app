@@ -1,0 +1,206 @@
+{
+  "format": "becken.changelog",
+  "version": 1,
+  "unreleased": {
+    "added": [
+      "A public version history for Becken."
+    ],
+    "changed": [
+      "App messaging emphasizes free use, no subscription and fully offline training; optional cloud transfers need a connection."
+    ],
+    "fixed": []
+  },
+  "releases": [
+    {
+      "version": "0.6.5",
+      "title": "Workout progress that stays in view",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [],
+      "changed": [
+        "A compact progress bar and completed/total count stay in the header while you scroll through sets."
+      ],
+      "fixed": [],
+      "playNotes": "Keep workout progress in view as you scroll: a tiny bar and completed/total count now appear beneath the workout title. Includes per-set sweetener logging and the Keep screen awake setting."
+    },
+    {
+      "version": "0.6.4",
+      "title": "Record resistance sweeteners",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [
+        "Choose eccentric, chains or inverse chains for each routine exercise, then record weight adjustments in each set.",
+        "Sweetener values carry forward from previous sets and are preserved in history and backups."
+      ],
+      "changed": [
+        "Unit conversion and deloading include sweetener adjustments; existing saved data migrates automatically."
+      ],
+      "fixed": [],
+      "playNotes": "Choose eccentric, chains or inverse chains for routine exercises and record their weight adjustments per set. Previous results, deloading and backups preserve those details."
+    },
+    {
+      "version": "0.6.3",
+      "title": "Keep your workout on screen",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [
+        "An optional Settings toggle keeps the screen awake while Becken is in the foreground.",
+        "A dismissible tip introduces this setting after a few launches."
+      ],
+      "changed": [],
+      "fixed": [],
+      "playNotes": "Keep the screen awake while Becken is open with a new optional setting and a dismissible startup tip."
+    },
+    {
+      "version": "0.6.2",
+      "title": "Prepare private Play testing",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [],
+      "changed": [
+        "Prepared the permanent Android app identity and release packaging for private Google Play testing.",
+        "Existing preview installations can transfer training data using manual backup and restore."
+      ],
+      "fixed": [],
+      "playNotes": "Prepared the permanent Android app identity and release packaging for private Google Play testing."
+    },
+    {
+      "version": "0.6.1",
+      "title": "The whole workout at a glance",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [
+        "A full-screen zoomable view of the routine → day → exercise → set → rep overview."
+      ],
+      "changed": [],
+      "fixed": [
+        "Restored the original single-picture overview to the welcome tour."
+      ],
+      "playNotes": "A full-screen zoomable view of the routine → day → exercise → set → rep overview."
+    },
+    {
+      "version": "0.6.0",
+      "title": "A welcome tour you can revisit",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [
+        "A welcome tour explains routines, days, exercises, sets, reps, imports and backups.",
+        "Replay the tour anytime from Settings."
+      ],
+      "changed": [],
+      "fixed": [],
+      "playNotes": "A welcome tour explains routines, days, exercises, sets, reps, imports and backups."
+    },
+    {
+      "version": "0.5.2",
+      "title": "Meet Momentum",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [],
+      "changed": [
+        "Applied Becken’s Momentum branding to the launcher, startup screen, app header, Settings and light/dark palettes."
+      ],
+      "fixed": [],
+      "playNotes": "Applied Becken’s Momentum branding to the launcher, startup screen, app header, Settings and light/dark palettes."
+    },
+    {
+      "version": "0.5.1",
+      "title": "Lift Log becomes Becken",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [],
+      "changed": [
+        "Renamed the app to Becken and updated names for newly created backup files.",
+        "Existing training data and previously created Drive files keep their identities."
+      ],
+      "fixed": [],
+      "playNotes": "Renamed the app to Becken and updated names for newly created backup files."
+    },
+    {
+      "version": "0.5.0",
+      "title": "Prepare optional Drive backups",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [
+        "Implemented optional automatic Google Drive backups and account connection handling."
+      ],
+      "changed": [
+        "Backups use one readable file, including unfinished workouts; restore keeps cloud uploads off until reconnected.",
+        "Drive integration requires deployment setup and remains disabled in default builds. Live Google authorization and upload testing were not verified for this version."
+      ],
+      "fixed": [],
+      "playNotes": "Implemented optional automatic Google Drive backups and account connection handling."
+    },
+    {
+      "version": "0.4.0",
+      "title": "Versioned data and migrations",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [
+        "Explicit schema versions for settings, exercise definitions, routines, workouts and editor drafts."
+      ],
+      "changed": [
+        "Older saved data and backups migrate to the new formats while retaining history and unfinished edits.",
+        "Unsupported or damaged data is rejected without resetting the existing database."
+      ],
+      "fixed": [],
+      "playNotes": "Explicit schema versions for settings, exercise definitions, routines, workouts and editor drafts."
+    },
+    {
+      "version": "0.3.0",
+      "title": "A bigger, grouped exercise library",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [
+        "An expanded catalog of 129 exercises grouped by muscle group.",
+        "Drill into a group or search the exercise library; custom exercises can be assigned a group."
+      ],
+      "changed": [],
+      "fixed": [],
+      "playNotes": "An expanded catalog of 129 exercises grouped by muscle group."
+    },
+    {
+      "version": "0.2.1",
+      "title": "A cleaner deload dialog",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [],
+      "changed": [],
+      "fixed": [
+        "Fixed the deload dialog’s action layout when the reduction is set to 100%."
+      ],
+      "playNotes": "Fixed the deload dialog’s action layout when the reduction is set to 100%."
+    },
+    {
+      "version": "0.2.0",
+      "title": "Ease back in after a break",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [
+        "An optional deload after a configurable break from training, with a reduction slider in 5% steps.",
+        "A debug-only setting can simulate a training break."
+      ],
+      "changed": [
+        "Tap weight and rep values to select them for replacement."
+      ],
+      "fixed": [
+        "Improved numeric input visibility when the keyboard opens."
+      ],
+      "playNotes": "An optional deload after a configurable break from training, with a reduction slider in 5% steps."
+    },
+    {
+      "version": "0.1.0",
+      "title": "The first lifting log",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [
+        "Create named routines and reusable training days with exercises, sets, weight and reps.",
+        "Use previous per-set results, pair exercises, substitute movements and edit workout history.",
+        "Save unfinished workouts locally, import routines and save or restore readable backup files."
+      ],
+      "changed": [],
+      "fixed": [],
+      "playNotes": "Create named routines and reusable training days with exercises, sets, weight and reps."
+    }
+  ]
+}
