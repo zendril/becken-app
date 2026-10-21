@@ -1,6 +1,6 @@
 # Becken website
 
-Minimal static landing page and Privacy Policy for **becken.app**. No build step, JavaScript, third-party fonts, or analytics. The Android app's source stays in the separate private repository.
+Minimal static landing page, changelog and Privacy Policy for **becken.app**. No production build step, JavaScript, third-party fonts, or analytics. The Android app's source stays in the separate private repository.
 
 ## Preview
 
@@ -38,3 +38,22 @@ Committing these files does not itself enable Pages or change domain DNS.
 - The three original screenshot PNGs are from `assets/play-store-examples/dark/` at app commit `92b1ac77df4a113902fbfd9851e7e888849eb07b`. They show sample data in Becken 0.6.1, captured on an Android 11 emulator at 1280 × 2856; they are not physical Pixel captures or screenshots of the 0.6.2 release. Pixels are unmodified, with decorative borders applied only by website CSS.
 
 No app source, credentials, or personal training records belong in this public repository.
+
+## Changelog maintenance
+
+The public history is at `https://becken.app/changelog/` after the changelog PR is merged. Canonical notes live in the private app repository's `changelog/releases.json`; this repository contains only a reviewed export. The app's publisher opens or updates a website PR; merging it publishes through the existing Pages configuration. It never auto-merges.
+
+From the app checkout, export to this checkout with `python3 scripts/changelog.py --export-site /path/to/website`. Then run here:
+
+```sh
+python3 scripts/build_changelog.py --write
+python3 scripts/build_changelog.py --check
+python3 -m unittest discover -s scripts -p 'test_*.py'
+python3 -m http.server 8000
+```
+
+Review `/changelog/`, the home page and `/privacy/` at phone and desktop widths. Commit the exported JSON and generated HTML on a feature branch, then raise a PR. Python runs during maintenance/CI; visitors receive static HTML. Don't edit generated HTML or diverge from the app's canonical notes. Development history does not imply public availability; only verified releases receive dates.
+
+The app workflow needs a `SITE_CHANGELOG_TOKEN` secret restricted to this website repository (Contents and Pull requests write). Configure it in the private app repository, never here or in committed files. Until configured, use the manual export above. Details are in the private app's `docs/changelog.md`.
+
+Every change must go through a PR. See [AGENTS.md](AGENTS.md) and [server-side enforcement setup](docs/pr-enforcement.md). The rule configuration still needs owner action; this session's integration could not administer rules.
