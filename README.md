@@ -41,7 +41,7 @@ No app source, credentials, or personal training records belong in this public r
 
 ## Changelog maintenance
 
-The public history is at `https://becken.app/changelog/` after the changelog PR is merged. Canonical notes live in the private app repository's `changelog/releases.json`; this repository contains only a reviewed export. The app's publisher opens or updates a website PR; merging it publishes through the existing Pages configuration. It never auto-merges.
+The public history is at `https://becken.app/changelog/` after the changelog PR is merged. Canonical notes live in the private app repository's `changelog/releases.json`; this repository contains only a reviewed export. The app's publisher opens or updates a website PR; merging it publishes through the existing Pages configuration. With [auto-merge and required checks configured](docs/pr-enforcement.md), the publisher requests auto-merge for generated changelog-only PRs after the `site` check passes. Other website PRs and app PRs remain manual. Missing setup leaves the generated PR open for manual review.
 
 From the app checkout, export to this checkout with `python3 scripts/changelog.py --export-site /path/to/website`. Then run here:
 
