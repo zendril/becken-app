@@ -5,7 +5,8 @@
     "added": [
       "A public version history for Becken.",
       "Incline (hands on bench) and decline (feet on bench) push-ups in the Chest exercise group.",
-      "Create an exercise from search results with the searched name already filled in, even when other exercises match."
+      "Create an exercise from search results with the searched name already filled in, even when other exercises match.",
+      "A debug preview of the flat push-up guide with four illustrated steps, readable captions and an enlarged view, available from the exercise library and picker."
     ],
     "changed": [
       "App messaging emphasizes free use, no subscription and fully offline training; optional cloud transfers need a connection."
