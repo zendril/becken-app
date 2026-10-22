@@ -12,7 +12,8 @@
       "App messaging emphasizes free use, no subscription and fully offline training; optional cloud transfers need a connection."
     ],
     "fixed": [
-      "Exercise search recognizes pushup, push-ups and push ups, including plural spellings."
+      "Exercise search recognizes pushup, push-ups and push ups, including plural spellings.",
+      "Fixed release checks that blocked new Play testing builds."
     ]
   },
   "releases": [
