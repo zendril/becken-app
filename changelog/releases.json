@@ -2,31 +2,43 @@
   "format": "becken.changelog",
   "version": 1,
   "unreleased": {
-    "added": [
-      "A public version history for Becken.",
-      "Incline (hands on bench) and decline (feet on bench) push-ups in the Chest exercise group.",
-      "Create an exercise from search results with the searched name already filled in, even when other exercises match.",
-      "A debug preview of the flat push-up guide with four illustrated steps, readable captions and an enlarged view, available from the exercise library, picker, routine day editor and workout exercise cards."
-    ],
-    "changed": [
-      "App messaging emphasizes free use, no subscription and fully offline training; optional cloud transfers need a connection."
-    ],
-    "fixed": [
-      "Exercise search recognizes pushup, push-ups and push ups, including plural spellings.",
-      "Fixed release checks that blocked new Play testing builds."
-    ]
+    "added": [],
+    "changed": [],
+    "fixed": []
   },
   "releases": [
     {
-      "version": "0.6.5",
-      "title": "Workout progress that stays in view",
+      "version": "0.6.6",
+      "title": "Exercise previews for Play testers",
       "channel": "development",
       "releasedOn": null,
-      "added": [],
+      "added": [
+        "An offline flat push-up illustration preview in Play builds, with four steps, captions, movement arrows and an enlarged view. Open it from the exercise library, the picker, a routine day or a workout."
+      ],
       "changed": [
-        "A compact progress bar and completed/total count stay in the header while you scroll through sets."
+        "Settings shows the build code beside the app version so testers can identify the installed update."
       ],
       "fixed": [],
+      "playNotes": "Preview the flat push-up in four illustrated steps, with captions, movement arrows and zoom. Open the guide while choosing an exercise or during a workout. The preview now works in Play testing builds. Settings also shows the build code beside the app version."
+    },
+    {
+      "version": "0.6.5",
+      "title": "Workout progress that stays in view",
+      "channel": "internal",
+      "releasedOn": "2026-10-22",
+      "added": [
+        "A public version history for Becken.",
+        "Incline (hands on bench) and decline (feet on bench) push-ups in the Chest exercise group.",
+        "Create an exercise from search results with the searched name already filled in, even when other exercises match."
+      ],
+      "changed": [
+        "A compact progress bar and completed/total count stay in the header while you scroll through sets.",
+        "App messaging emphasizes free use, no subscription and fully offline training; optional cloud transfers need a connection."
+      ],
+      "fixed": [
+        "Exercise search recognizes pushup, push-ups and push ups, including plural spellings.",
+        "Fixed release checks that blocked new Play testing builds."
+      ],
       "playNotes": "Keep workout progress in view as you scroll: a tiny bar and completed/total count now appear beneath the workout title. Includes per-set sweetener logging and the Keep screen awake setting."
     },
     {
