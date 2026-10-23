@@ -8,6 +8,21 @@
   },
   "releases": [
     {
+      "version": "0.6.8",
+      "title": "Illustration previews for every built-in exercise",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [
+        "Offline illustration previews for all 131 built-in exercises, with a generic human character, movement arrows and step-by-step captions.",
+        "Longer sequences for complex lifts, including the clean and press and Turkish get-up."
+      ],
+      "changed": [
+        "Open the matching preview from the exercise library, exercise picker, routine day or workout, and enlarge the current step."
+      ],
+      "fixed": [],
+      "playNotes": "Illustration previews now cover all 131 built-in exercises. See a generic human character, movement arrows and step-by-step captions, with extra steps for complex lifts. Open a guide while choosing an exercise or during a workout. Every preview works offline and can be enlarged."
+    },
+    {
       "version": "0.6.7",
       "title": "Terms and exercise safety",
       "channel": "development",
