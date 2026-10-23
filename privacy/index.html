@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#081722">
   <title>Privacy Policy — Becken</title>
-  <meta name="description" content="How Becken handles workout data, backups, support messages, and visits to this website.">
+  <meta name="description" content="Becken terms, exercise safety and privacy information.">
   <link rel="canonical" href="https://becken.app/privacy/">
   <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
@@ -14,41 +14,62 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header wrap">
     <a class="brand" href="../" aria-label="Becken home"><img src="../assets/logo.svg" width="42" height="42" alt=""><span>Becken</span></a>
-    <nav aria-label="Main navigation"><a href="../#screenshots">The app</a><a href="../changelog/">Changelog</a><a href="./" aria-current="page">Privacy</a></nav>
+    <nav aria-label="Main navigation"><a href="../#screenshots">The app</a><a href="../changelog/">Changelog</a><a href="../terms/">Terms</a><a href="../privacy/">Privacy</a></nav>
   </header>
   <main class="policy wrap" id="main">
-    <p class="eyebrow">YOUR TRAINING. YOUR DATA.</p>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: October 15, 2026</p>
-    <p class="lede">Becken is an Android lifting log. Your routines and workouts are stored on your device, and you do not need a Becken account to use the app.</p>
-    <div class="summary"><p>This policy covers the Becken Android app and becken.app. The current tester release stores training data locally. Automatic Google Drive backup is disabled in that release.</p></div>
-    <h2>Data stored in the app</h2>
-    <p>Becken stores your routines, exercise definitions, weights, repetitions, completed and unfinished workouts, workout history, and preferences on your device. These records support workout logging, previous-set suggestions, history, and resuming an unfinished session.</p>
-    <p>Becken does not operate a server that receives your workout records. The current app has no advertising, analytics, or third-party crash-reporting SDKs, and does not sell your personal data.</p>
-    <h2>Imports and manual backups</h2>
-    <p>You can choose files to import and save a backup using Android’s file picker. Backups contain readable training data and settings; they are not encrypted by Becken. Keep them in a location you trust.</p>
-    <p>If you choose a cloud storage provider, send a backup to someone, or upload it to another service, that provider or recipient receives the data you share. Their privacy terms apply. Becken does not automatically send backups to its developer.</p>
-    <h2>Google Drive backup</h2>
-    <p>Automatic Google Drive backup is not enabled in the current tester release. In a build where this feature is enabled, it requires you to select a Google account and explicitly authorize access. Becken requests access to Drive files it creates or that you authorize for the app, rather than general access to all your Drive files.</p>
-    <p>When enabled and connected, this feature uploads a backup of your settings, exercises, routines, and completed and unfinished workouts directly to your selected Google Drive account. The app stores connection and backup status locally. Authorization tokens are obtained through Google Play services and are not persisted by Becken.</p>
-    <p>Disconnecting stops future scheduled backups but does not delete a backup already in Drive or revoke the existing Google permission. Delete the file in Drive and remove Becken’s access in your Google account settings if desired. A transfer already in progress may complete when you disconnect. Google processes data under its <a href="https://policies.google.com/privacy">Privacy Policy</a>.</p>
-    <h2>Your choices and deletion</h2>
-    <ul>
-      <li>You can edit or delete workout records using the app’s controls.</li>
-      <li>You can remove the app’s local data by clearing Becken’s storage in Android settings or uninstalling the app. Save a backup first if you want to keep your records.</li>
-      <li>Exported files and any cloud copies are separate. Delete those copies from their storage locations yourself; deleting local app data does not remove them.</li>
-    </ul>
-    <p>Local records remain on your device until you delete them or the app’s storage is cleared. Becken disables Android’s automatic app-data backup and device-transfer backup for its stored app data.</p>
-    <h2>Support messages</h2>
-    <p>If you email <a href="mailto:support@becken.app">support@becken.app</a>, we receive your email address and the information you include. We use it to respond and investigate your request, and keep it as needed to handle the request and related follow-up. You can request deletion by emailing the same address. Please do not include workout backups or sensitive information unless needed for your request.</p>
-    <h2>This website and Google Play</h2>
-    <p>This website does not use analytics scripts, advertising trackers, cookies, or browser storage. It is hosted on GitHub Pages. GitHub may process technical information, including your IP address, when serving the website, as described in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
-    <p>Following the Google Play link takes you to Google’s service. Google handles store access, installation, and related platform data under its own privacy terms.</p>
-    <h2>Security</h2>
-    <p>Becken relies on Android’s app storage protections for local records. Protect your device and any backup files you create. No storage or transmission method can guarantee absolute security.</p>
-    <h2>Changes and contact</h2>
-    <p>We will update this page when the app’s data practices change and revise the date above. For privacy questions or requests, contact the Becken developer at <a href="mailto:support@becken.app">support@becken.app</a>.</p>
+    <p class="updated">Version 1 · October 22, 2026</p>
+    <p><a href="privacy.txt" download>Save a text copy</a> · Use your browser’s Print command to print or save a PDF.</p>
+    <nav class="legal-contents" aria-label="Document sections"><ul>
+      <li><a href="#about">Your training. Your data.</a></li>
+      <li><a href="#data-stored-in-the-app">Data stored in the app</a></li>
+      <li><a href="#terms-acceptance">Terms acceptance on your device</a></li>
+      <li><a href="#imports-and-manual-backups">Imports and manual backups</a></li>
+      <li><a href="#google-drive-backup">Google Drive backup</a></li>
+      <li><a href="#your-choices-and-deletion">Your choices and deletion</a></li>
+      <li><a href="#this-website-and-google-play">This website and Google Play</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#changes">Changes</a></li>
+    </ul></nav>
+    <section id="about"><h2>Your training. Your data.</h2>
+      <p>Becken is an Android lifting log operated personally by an individual based in Delaware, USA, under the name zendril.dev (the &quot;Operator&quot;). Becken and zendril.dev are operating names and do not identify a separate corporation or limited liability company. This policy covers the Becken Android app and Becken websites at becken.app and beckenapp.com.</p>
+      <p>Your routines and workouts are stored on your device. You do not need a Becken account. Automatic Google Drive backup is disabled in the current tester release.</p>
+    </section>
+    <section id="data-stored-in-the-app"><h2>Data stored in the app</h2>
+      <p>Becken stores your routines, exercise definitions, weights, repetitions, completed and unfinished workouts, workout history, and preferences on your device. These records support workout logging, previous-set suggestions, history, and resuming an unfinished session.</p>
+      <p>Becken does not operate a server that receives your workout records. The current app has no advertising, analytics, or third-party crash-reporting SDKs, and does not sell your personal data.</p>
+    </section>
+    <section id="terms-acceptance"><h2>Terms acceptance on your device</h2>
+      <p>Becken stores a local record when you agree to its Terms of Service and Exercise Risk and Release. It includes the accepted text and version, text hashes, acknowledgment states, app version and build, device locale, document language, a random receipt identifier, and the acceptance time reported by your device clock. It is not a verified identity or an independently verified time.</p>
+      <p>These records stay in private app storage. They are not sent to the developer and are excluded from workout backups and Android device transfer. Older accepted versions are retained on the device. If an unreadable record needs recovery, its original bytes are preserved locally before recording a new agreement.</p>
+      <p>You can read or save your accepted terms and receipt from Terms and safety, or export all agreement records, including any preserved original files, as a ZIP file. An exported copy goes only to the destination you select. Uninstalling or clearing app storage removes the local acceptance records; exported copies remain where you saved them. Reinstalling requires a new agreement. Declining terms does not delete training data: you can still read existing records, export a backup or delete local training data.</p>
+    </section>
+    <section id="imports-and-manual-backups"><h2>Imports and manual backups</h2>
+      <p>You can choose files to import and save a backup using Android’s file picker. Backups contain readable training data and settings; they are not encrypted by Becken. Keep them in a location you trust.</p>
+      <p>If you choose a cloud storage provider, send a backup to someone, or upload it to another service, that provider or recipient receives the data you share. Their privacy terms apply. Becken does not automatically send backups to its developer.</p>
+    </section>
+    <section id="google-drive-backup"><h2>Google Drive backup</h2>
+      <p>Automatic Google Drive backup is not enabled in the current tester release. In a build where this feature is enabled, it requires you to select a Google account and explicitly authorize access. Becken requests access to Drive files it creates or that you authorize for the app, rather than general access to all your Drive files.</p>
+      <p>When enabled and connected, this feature uploads a backup of your settings, exercises, routines, and completed and unfinished workouts directly to your selected Google Drive account. The app stores connection and backup status locally. Authorization tokens are obtained through Google Play services and are not persisted by Becken.</p>
+      <p>Disconnecting stops future scheduled backups but does not delete a backup already in Drive or revoke the existing Google permission. Delete the file in Drive and remove Becken’s access in your Google account settings if desired. A transfer already in progress may complete when you disconnect. Google processes data under its Privacy Policy (<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>).</p>
+    </section>
+    <section id="your-choices-and-deletion"><h2>Your choices and deletion</h2>
+      <p>You can edit or delete workout records using the app’s controls.</p>
+      <p>You can remove the app’s local data by clearing Becken’s storage in Android settings or uninstalling the app. Save a backup first if you want to keep your records.</p>
+      <p>Exported files and any cloud copies are separate. Delete those copies from their storage locations yourself; deleting local app data does not remove them.</p>
+      <p>Local records remain on your device until you delete them or the app’s storage is cleared. Becken disables Android’s automatic app-data backup and device-transfer backup for its stored app data.</p>
+    </section>
+    <section id="this-website-and-google-play"><h2>This website and Google Play</h2>
+      <p>This website does not use analytics scripts, advertising trackers, cookies, or browser storage. It is hosted on GitHub Pages. GitHub may process technical information, including your IP address, when serving the website, as described in the GitHub Privacy Statement (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement</a>).</p>
+      <p>Following the Google Play link takes you to Google’s service. Google handles store access, installation, and related platform data under its own privacy terms.</p>
+    </section>
+    <section id="security"><h2>Security</h2>
+      <p>Becken relies on Android’s app storage protections for local records. Protect your device and any backup files you create. No storage or transmission method can guarantee absolute security.</p>
+    </section>
+    <section id="changes"><h2>Changes</h2>
+      <p>This policy will be updated when the app’s data practices change, with a revised date above.</p>
+    </section>
   </main>
-  <footer class="site-footer wrap"><span class="footer-brand">Becken <span>Make the next rep count.</span></span><a href="../">Back to home</a><a href="../changelog/">Changelog</a></footer>
+  <footer class="site-footer wrap"><span class="footer-brand">Becken <span>Make the next rep count.</span></span><a href="../">Home</a><a href="../terms/">Terms</a><a href="../privacy/">Privacy Policy</a><a href="../changelog/">Changelog</a></footer>
 </body>
 </html>

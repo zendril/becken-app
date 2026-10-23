@@ -1,0 +1,211 @@
+{
+  "terms": {
+    "version": "1",
+    "title": "Terms of Service",
+    "updated": "October 22, 2026",
+    "url": "https://becken.app/terms/",
+    "sections": [
+      {
+        "id": "operator-and-agreement",
+        "title": "1. Who operates Becken; agreement and scope",
+        "paragraphs": [
+          "Becken is operated by an individual based in Delaware, USA, under the name zendril.dev (the \"Operator,\" \"I,\" or \"me\"). Becken and zendril.dev are operating names used by that individual; they do not identify a separate corporation or limited liability company.",
+          "These Terms cover the Becken Android app and Becken content provided by the Operator at becken.app and beckenapp.com, including associated exercise guides and downloadable materials (together, the \"Service\"). They do not govern unrelated products that may use the zendril.dev name or third-party websites.",
+          "By affirmatively selecting Agree and continue after the agreement and exercise-risk acknowledgments, you agree to these Terms for your subsequent use of the Service. Please read the exercise-risk and release provisions in sections 5–7 before agreeing. If you do not agree, do not use the app's workout features or exercise guidance. You may still read these Terms and the Privacy Policy and use the provided options to retrieve or delete your existing records.",
+          "The website makes these Terms available for review. Merely displaying a link or following a download link is not a recorded affirmative acceptance. A website agreement screen, if offered for exercise features, will identify the action that signifies agreement.",
+          "Version: 1. Effective date: October 22, 2026."
+        ]
+      },
+      {
+        "id": "eligibility",
+        "title": "2. Eligibility",
+        "paragraphs": [
+          "You must be at least 18 years old and have reached the legal age of majority where you live to use the app's workout features and exercise guidance. You must be able to enter into this agreement. Do not accept it on behalf of a child or another person. This Service is not offered for children's use under these Terms."
+        ]
+      },
+      {
+        "id": "what-becken-does",
+        "title": "3. What Becken does",
+        "paragraphs": [
+          "Becken is a free lifting log with routine planning, workout records, historical prefills, optional exercise guidance and backup tools. No subscription or app account is required for local use. Optional external storage services may require internet access and their own accounts and terms.",
+          "Past weights and repetitions, separate hints showing the highest weight and highest repetition count from the last workout, unit conversions and deload suggestions are organizational aids. They are not an assessment of your present strength, health, readiness or ability to perform a movement safely. A previously completed set or suggested reduction does not establish that a load is safe today. Review every exercise, load, repetition count and setting before use. Check the selected units and whether a weight means per hand, combined weight or added resistance before using it.",
+          "Imported routines, custom exercises and user-entered resistance adjustments are not approved for safety or individual suitability merely because Becken accepts or displays them. Format validation checks data structure, not training quality."
+        ]
+      },
+      {
+        "id": "fitness-information",
+        "title": "4. General fitness information; limitations of depictions",
+        "paragraphs": [
+          "Exercise descriptions, captions, illustrations, diagrams and any other demonstrations are general fitness information. They may contain mistakes, omissions or simplified movement details and may not suit your anatomy, experience, medical condition or equipment. Generated or preview illustrations may also contain visual errors. Do not infer correct technique, range of motion, equipment setup or safe resistance from an image alone.",
+          "Becken does not observe your movement, inspect equipment, monitor symptoms or provide live supervision. It does not provide medical diagnosis, treatment, rehabilitation or medical clearance. Its fitness information does not replace individual instruction from a qualified trainer or advice from a qualified healthcare professional. No particular performance, health or safety outcome is promised.",
+          "Get qualified instruction when unsure how to perform an exercise. Seek medical advice before starting or changing exercise when your health, symptoms, pregnancy, injury or other circumstances make that appropriate. Do not ignore professional advice because of content in Becken. Stop exercising if you experience pain, dizziness, chest discomfort or other concerning symptoms; seek appropriate medical help, including emergency assistance when needed. Becken is not an emergency service.",
+          "If guidance appears inaccurate or unsafe, do not rely on it or continue that movement. Seek qualified instruction before trying it."
+        ]
+      },
+      {
+        "id": "exercise-risks",
+        "title": "5. Your exercise choices and assumption of inherent risks",
+        "paragraphs": [
+          "Strength training and other exercise involve inherent risks, including strains, falls, equipment-related injury, aggravation of existing conditions, serious injury, permanent disability and death. These risks can remain even when an exercise is performed carefully.",
+          "You choose whether and how to exercise. You are responsible for choosing suitable activities and resistance, checking your surroundings and equipment, following equipment instructions, obtaining appropriate assistance or spotting, and stopping when necessary. Subject to section 7, you voluntarily assume the inherent risks of the exercise you choose to undertake while using the Service. This assumption of inherent risks is distinct from the express release in section 6."
+        ]
+      },
+      {
+        "id": "exercise-risk-and-release",
+        "title": "6. Exercise-related release, including the Operator's own ordinary negligence",
+        "paragraphs": [
+          "This section affects your legal rights. Read it before agreeing.",
+          "In exchange for access to and permission to use the Service, and only to the extent applicable law permits, you release the Operator identified in section 1, individually and as the operator of Becken under the name zendril.dev, from claims that you may lawfully release for bodily injury, death or property damage arising from your exercise or attempted exercise in connection with use of the Service after you accept these Terms.",
+          "This release expressly includes claims caused by the Operator's own ordinary negligence in creating, selecting, presenting or maintaining exercise descriptions, instructions, captions, illustrations, diagrams or other demonstrations, and in implementing or displaying workout suggestions, historical prefills, conversions or deload calculations. It includes exercise-related claims based on inaccurate, incomplete or misleading exercise descriptions or depictions in the app or on the Becken websites, subject to section 7.",
+          "Where the law permits, this means giving up certain injury claims even if the Operator failed to use reasonable care. The exceptions below still apply.",
+          "This release is limited to the activities and claims described here. It does not apply to unrelated conduct, claims arising before you accepted it, another person's independent rights, or the excluded claims in section 7."
+        ]
+      },
+      {
+        "id": "rights-that-remain",
+        "title": "7. Rights and liabilities that remain",
+        "paragraphs": [
+          "Neither the release nor any other part of these Terms excludes or limits liability for gross negligence, recklessness, intentional misconduct or fraud. They do not exclude or limit death or personal injury caused by negligence where applicable law prohibits that exclusion or limitation, or any other liability, remedy, warranty or consumer right that cannot lawfully be excluded or limited. These exceptions apply throughout the Terms, including sections 5, 6, 10 and 11.",
+          "You retain the right to report safety concerns, contact regulators, obtain legal advice and pursue claims that these Terms do not lawfully release. Nothing here states that every possible claim is barred or that you may never bring a lawsuit."
+        ]
+      },
+      {
+        "id": "records-and-privacy",
+        "title": "8. Your records, privacy and external services",
+        "paragraphs": [
+          "You retain ownership of your workout records and routines. Local logging does not require sending them to the Operator. Keep backups appropriate to your needs and check files before restoring them; restoring a backup replaces local data after confirmation. External file storage, Google Play and any enabled Google Drive features have their own availability, permissions and terms. Becken does not promise continuous access to those services or synchronization between devices.",
+          "The Privacy Policy (https://becken.app/privacy/) explains data practices. An acknowledgment of these Terms is not consent to optional marketing, tracking or other processing that requires a separate choice."
+        ]
+      },
+      {
+        "id": "permission-to-use",
+        "title": "9. Permission to use the Service",
+        "paragraphs": [
+          "Subject to these Terms, the Operator grants you a limited, nonexclusive permission to use Becken for your own lawful training and recordkeeping. You may export and use your own records. Ownership of your records does not transfer ownership of Becken's software, branding or exercise artwork. Third-party components remain subject to their applicable licenses.",
+          "Do not interfere with the Service, attempt unauthorized access, distribute malicious files, or use others' material without permission. Nothing here restricts activity that applicable law protects, including lawful security research or interoperability rights."
+        ]
+      },
+      {
+        "id": "warranties",
+        "title": "10. Service availability and warranty limits",
+        "paragraphs": [
+          "Subject to section 7 and any mandatory legal obligations, the Service is provided \"as is\" and \"as available.\" To the extent law permits, the Operator disclaims implied warranties of merchantability and fitness for a particular purpose. The Operator does not promise uninterrupted operation, error-free content, perfect backup recovery or achievement of a training result. This does not remove a mandatory duty of care or permit misleading statements about the Service."
+        ]
+      },
+      {
+        "id": "other-damages",
+        "title": "11. Limits on other damages",
+        "paragraphs": [
+          "Subject to section 7, and only where applicable law permits, the Operator is not liable for indirect or consequential economic losses arising from use of the Service. This provision does not independently release or limit liability for bodily injury or death; those claims are addressed only by sections 6 and 7. It does not remove mandatory remedies for loss of data or other consumer harms."
+        ]
+      },
+      {
+        "id": "changes",
+        "title": "12. Changes and stopping use",
+        "paragraphs": [
+          "You may stop using Becken at any time. You may retrieve or delete your existing local records without accepting new terms. Keep a backup before uninstalling or clearing app storage if you want to retain your records.",
+          "The Operator may improve, correct or discontinue parts of the Service, subject to applicable law. Material changes to these Terms will be explained and presented for renewed affirmative acceptance before they apply to your future use of affected features. Posting a replacement page alone does not record your acceptance. Published versions remain available at https://becken.app/terms/versions/. Changes do not retroactively release claims or alter accrued rights."
+        ]
+      },
+      {
+        "id": "governing-law",
+        "title": "13. Governing law and disputes",
+        "paragraphs": [
+          "Delaware law governs these Terms except where applicable mandatory law requires otherwise. This choice does not remove mandatory consumer protections available where you live. Courts in Delaware may hear disputes where they have jurisdiction; these Terms do not require an exclusive Delaware forum or prevent proceedings in another forum available under mandatory law.",
+          "There is no mandatory arbitration clause, class-action waiver, shortened claim deadline or mandatory pre-suit waiting period in these Terms.",
+          "If a provision is unenforceable, it applies only to the extent law permits, and the remaining provisions continue where they can lawfully operate. This does not authorize expansion of the release. These Terms address the Service and do not override mandatory statutory rights or applicable third-party software licenses."
+        ]
+      }
+    ],
+    "language": "en",
+    "operatorDescription": "the individual operating Becken under the name zendril.dev, based in Delaware, USA",
+    "text": "Terms of Service\n\nVersion 1 · October 22, 2026\n\n1. Who operates Becken; agreement and scope\n\nBecken is operated by an individual based in Delaware, USA, under the name zendril.dev (the \"Operator,\" \"I,\" or \"me\"). Becken and zendril.dev are operating names used by that individual; they do not identify a separate corporation or limited liability company.\n\nThese Terms cover the Becken Android app and Becken content provided by the Operator at becken.app and beckenapp.com, including associated exercise guides and downloadable materials (together, the \"Service\"). They do not govern unrelated products that may use the zendril.dev name or third-party websites.\n\nBy affirmatively selecting Agree and continue after the agreement and exercise-risk acknowledgments, you agree to these Terms for your subsequent use of the Service. Please read the exercise-risk and release provisions in sections 5–7 before agreeing. If you do not agree, do not use the app's workout features or exercise guidance. You may still read these Terms and the Privacy Policy and use the provided options to retrieve or delete your existing records.\n\nThe website makes these Terms available for review. Merely displaying a link or following a download link is not a recorded affirmative acceptance. A website agreement screen, if offered for exercise features, will identify the action that signifies agreement.\n\nVersion: 1. Effective date: October 22, 2026.\n\n2. Eligibility\n\nYou must be at least 18 years old and have reached the legal age of majority where you live to use the app's workout features and exercise guidance. You must be able to enter into this agreement. Do not accept it on behalf of a child or another person. This Service is not offered for children's use under these Terms.\n\n3. What Becken does\n\nBecken is a free lifting log with routine planning, workout records, historical prefills, optional exercise guidance and backup tools. No subscription or app account is required for local use. Optional external storage services may require internet access and their own accounts and terms.\n\nPast weights and repetitions, separate hints showing the highest weight and highest repetition count from the last workout, unit conversions and deload suggestions are organizational aids. They are not an assessment of your present strength, health, readiness or ability to perform a movement safely. A previously completed set or suggested reduction does not establish that a load is safe today. Review every exercise, load, repetition count and setting before use. Check the selected units and whether a weight means per hand, combined weight or added resistance before using it.\n\nImported routines, custom exercises and user-entered resistance adjustments are not approved for safety or individual suitability merely because Becken accepts or displays them. Format validation checks data structure, not training quality.\n\n4. General fitness information; limitations of depictions\n\nExercise descriptions, captions, illustrations, diagrams and any other demonstrations are general fitness information. They may contain mistakes, omissions or simplified movement details and may not suit your anatomy, experience, medical condition or equipment. Generated or preview illustrations may also contain visual errors. Do not infer correct technique, range of motion, equipment setup or safe resistance from an image alone.\n\nBecken does not observe your movement, inspect equipment, monitor symptoms or provide live supervision. It does not provide medical diagnosis, treatment, rehabilitation or medical clearance. Its fitness information does not replace individual instruction from a qualified trainer or advice from a qualified healthcare professional. No particular performance, health or safety outcome is promised.\n\nGet qualified instruction when unsure how to perform an exercise. Seek medical advice before starting or changing exercise when your health, symptoms, pregnancy, injury or other circumstances make that appropriate. Do not ignore professional advice because of content in Becken. Stop exercising if you experience pain, dizziness, chest discomfort or other concerning symptoms; seek appropriate medical help, including emergency assistance when needed. Becken is not an emergency service.\n\nIf guidance appears inaccurate or unsafe, do not rely on it or continue that movement. Seek qualified instruction before trying it.\n\n5. Your exercise choices and assumption of inherent risks\n\nStrength training and other exercise involve inherent risks, including strains, falls, equipment-related injury, aggravation of existing conditions, serious injury, permanent disability and death. These risks can remain even when an exercise is performed carefully.\n\nYou choose whether and how to exercise. You are responsible for choosing suitable activities and resistance, checking your surroundings and equipment, following equipment instructions, obtaining appropriate assistance or spotting, and stopping when necessary. Subject to section 7, you voluntarily assume the inherent risks of the exercise you choose to undertake while using the Service. This assumption of inherent risks is distinct from the express release in section 6.\n\n6. Exercise-related release, including the Operator's own ordinary negligence\n\nThis section affects your legal rights. Read it before agreeing.\n\nIn exchange for access to and permission to use the Service, and only to the extent applicable law permits, you release the Operator identified in section 1, individually and as the operator of Becken under the name zendril.dev, from claims that you may lawfully release for bodily injury, death or property damage arising from your exercise or attempted exercise in connection with use of the Service after you accept these Terms.\n\nThis release expressly includes claims caused by the Operator's own ordinary negligence in creating, selecting, presenting or maintaining exercise descriptions, instructions, captions, illustrations, diagrams or other demonstrations, and in implementing or displaying workout suggestions, historical prefills, conversions or deload calculations. It includes exercise-related claims based on inaccurate, incomplete or misleading exercise descriptions or depictions in the app or on the Becken websites, subject to section 7.\n\nWhere the law permits, this means giving up certain injury claims even if the Operator failed to use reasonable care. The exceptions below still apply.\n\nThis release is limited to the activities and claims described here. It does not apply to unrelated conduct, claims arising before you accepted it, another person's independent rights, or the excluded claims in section 7.\n\n7. Rights and liabilities that remain\n\nNeither the release nor any other part of these Terms excludes or limits liability for gross negligence, recklessness, intentional misconduct or fraud. They do not exclude or limit death or personal injury caused by negligence where applicable law prohibits that exclusion or limitation, or any other liability, remedy, warranty or consumer right that cannot lawfully be excluded or limited. These exceptions apply throughout the Terms, including sections 5, 6, 10 and 11.\n\nYou retain the right to report safety concerns, contact regulators, obtain legal advice and pursue claims that these Terms do not lawfully release. Nothing here states that every possible claim is barred or that you may never bring a lawsuit.\n\n8. Your records, privacy and external services\n\nYou retain ownership of your workout records and routines. Local logging does not require sending them to the Operator. Keep backups appropriate to your needs and check files before restoring them; restoring a backup replaces local data after confirmation. External file storage, Google Play and any enabled Google Drive features have their own availability, permissions and terms. Becken does not promise continuous access to those services or synchronization between devices.\n\nThe Privacy Policy (https://becken.app/privacy/) explains data practices. An acknowledgment of these Terms is not consent to optional marketing, tracking or other processing that requires a separate choice.\n\n9. Permission to use the Service\n\nSubject to these Terms, the Operator grants you a limited, nonexclusive permission to use Becken for your own lawful training and recordkeeping. You may export and use your own records. Ownership of your records does not transfer ownership of Becken's software, branding or exercise artwork. Third-party components remain subject to their applicable licenses.\n\nDo not interfere with the Service, attempt unauthorized access, distribute malicious files, or use others' material without permission. Nothing here restricts activity that applicable law protects, including lawful security research or interoperability rights.\n\n10. Service availability and warranty limits\n\nSubject to section 7 and any mandatory legal obligations, the Service is provided \"as is\" and \"as available.\" To the extent law permits, the Operator disclaims implied warranties of merchantability and fitness for a particular purpose. The Operator does not promise uninterrupted operation, error-free content, perfect backup recovery or achievement of a training result. This does not remove a mandatory duty of care or permit misleading statements about the Service.\n\n11. Limits on other damages\n\nSubject to section 7, and only where applicable law permits, the Operator is not liable for indirect or consequential economic losses arising from use of the Service. This provision does not independently release or limit liability for bodily injury or death; those claims are addressed only by sections 6 and 7. It does not remove mandatory remedies for loss of data or other consumer harms.\n\n12. Changes and stopping use\n\nYou may stop using Becken at any time. You may retrieve or delete your existing local records without accepting new terms. Keep a backup before uninstalling or clearing app storage if you want to retain your records.\n\nThe Operator may improve, correct or discontinue parts of the Service, subject to applicable law. Material changes to these Terms will be explained and presented for renewed affirmative acceptance before they apply to your future use of affected features. Posting a replacement page alone does not record your acceptance. Published versions remain available at https://becken.app/terms/versions/. Changes do not retroactively release claims or alter accrued rights.\n\n13. Governing law and disputes\n\nDelaware law governs these Terms except where applicable mandatory law requires otherwise. This choice does not remove mandatory consumer protections available where you live. Courts in Delaware may hear disputes where they have jurisdiction; these Terms do not require an exclusive Delaware forum or prevent proceedings in another forum available under mandatory law.\n\nThere is no mandatory arbitration clause, class-action waiver, shortened claim deadline or mandatory pre-suit waiting period in these Terms.\n\nIf a provision is unenforceable, it applies only to the extent law permits, and the remaining provisions continue where they can lawfully operate. This does not authorize expansion of the release. These Terms address the Service and do not override mandatory statutory rights or applicable third-party software licenses.\n",
+    "sha256": "8deb5c4d9287d33df6e0fa9cbc4abcde26faabd02f397b376c9b626e4b6d79c1"
+  },
+  "privacy": {
+    "version": "1",
+    "title": "Privacy Policy",
+    "updated": "October 22, 2026",
+    "url": "https://becken.app/privacy/",
+    "sections": [
+      {
+        "id": "about",
+        "title": "Your training. Your data.",
+        "paragraphs": [
+          "Becken is an Android lifting log operated personally by an individual based in Delaware, USA, under the name zendril.dev (the \"Operator\"). Becken and zendril.dev are operating names and do not identify a separate corporation or limited liability company. This policy covers the Becken Android app and Becken websites at becken.app and beckenapp.com.",
+          "Your routines and workouts are stored on your device. You do not need a Becken account. Automatic Google Drive backup is disabled in the current tester release."
+        ]
+      },
+      {
+        "id": "data-stored-in-the-app",
+        "title": "Data stored in the app",
+        "paragraphs": [
+          "Becken stores your routines, exercise definitions, weights, repetitions, completed and unfinished workouts, workout history, and preferences on your device. These records support workout logging, previous-set suggestions, history, and resuming an unfinished session.",
+          "Becken does not operate a server that receives your workout records. The current app has no advertising, analytics, or third-party crash-reporting SDKs, and does not sell your personal data."
+        ]
+      },
+      {
+        "id": "terms-acceptance",
+        "title": "Terms acceptance on your device",
+        "paragraphs": [
+          "Becken stores a local record when you agree to its Terms of Service and Exercise Risk and Release. It includes the accepted text and version, text hashes, acknowledgment states, app version and build, device locale, document language, a random receipt identifier, and the acceptance time reported by your device clock. It is not a verified identity or an independently verified time.",
+          "These records stay in private app storage. They are not sent to the developer and are excluded from workout backups and Android device transfer. Older accepted versions are retained on the device. If an unreadable record needs recovery, its original bytes are preserved locally before recording a new agreement.",
+          "You can read or save your accepted terms and receipt from Terms and safety, or export all agreement records, including any preserved original files, as a ZIP file. An exported copy goes only to the destination you select. Uninstalling or clearing app storage removes the local acceptance records; exported copies remain where you saved them. Reinstalling requires a new agreement. Declining terms does not delete training data: you can still read existing records, export a backup or delete local training data."
+        ]
+      },
+      {
+        "id": "imports-and-manual-backups",
+        "title": "Imports and manual backups",
+        "paragraphs": [
+          "You can choose files to import and save a backup using Android’s file picker. Backups contain readable training data and settings; they are not encrypted by Becken. Keep them in a location you trust.",
+          "If you choose a cloud storage provider, send a backup to someone, or upload it to another service, that provider or recipient receives the data you share. Their privacy terms apply. Becken does not automatically send backups to its developer."
+        ]
+      },
+      {
+        "id": "google-drive-backup",
+        "title": "Google Drive backup",
+        "paragraphs": [
+          "Automatic Google Drive backup is not enabled in the current tester release. In a build where this feature is enabled, it requires you to select a Google account and explicitly authorize access. Becken requests access to Drive files it creates or that you authorize for the app, rather than general access to all your Drive files.",
+          "When enabled and connected, this feature uploads a backup of your settings, exercises, routines, and completed and unfinished workouts directly to your selected Google Drive account. The app stores connection and backup status locally. Authorization tokens are obtained through Google Play services and are not persisted by Becken.",
+          "Disconnecting stops future scheduled backups but does not delete a backup already in Drive or revoke the existing Google permission. Delete the file in Drive and remove Becken’s access in your Google account settings if desired. A transfer already in progress may complete when you disconnect. Google processes data under its Privacy Policy (https://policies.google.com/privacy)."
+        ]
+      },
+      {
+        "id": "your-choices-and-deletion",
+        "title": "Your choices and deletion",
+        "paragraphs": [
+          "You can edit or delete workout records using the app’s controls.",
+          "You can remove the app’s local data by clearing Becken’s storage in Android settings or uninstalling the app. Save a backup first if you want to keep your records.",
+          "Exported files and any cloud copies are separate. Delete those copies from their storage locations yourself; deleting local app data does not remove them.",
+          "Local records remain on your device until you delete them or the app’s storage is cleared. Becken disables Android’s automatic app-data backup and device-transfer backup for its stored app data."
+        ]
+      },
+      {
+        "id": "this-website-and-google-play",
+        "title": "This website and Google Play",
+        "paragraphs": [
+          "This website does not use analytics scripts, advertising trackers, cookies, or browser storage. It is hosted on GitHub Pages. GitHub may process technical information, including your IP address, when serving the website, as described in the GitHub Privacy Statement (https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).",
+          "Following the Google Play link takes you to Google’s service. Google handles store access, installation, and related platform data under its own privacy terms."
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Security",
+        "paragraphs": [
+          "Becken relies on Android’s app storage protections for local records. Protect your device and any backup files you create. No storage or transmission method can guarantee absolute security."
+        ]
+      },
+      {
+        "id": "changes",
+        "title": "Changes",
+        "paragraphs": [
+          "This policy will be updated when the app’s data practices change, with a revised date above."
+        ]
+      }
+    ],
+    "language": "en",
+    "operatorDescription": "the individual operating Becken under the name zendril.dev, based in Delaware, USA",
+    "text": "Privacy Policy\n\nVersion 1 · October 22, 2026\n\nYour training. Your data.\n\nBecken is an Android lifting log operated personally by an individual based in Delaware, USA, under the name zendril.dev (the \"Operator\"). Becken and zendril.dev are operating names and do not identify a separate corporation or limited liability company. This policy covers the Becken Android app and Becken websites at becken.app and beckenapp.com.\n\nYour routines and workouts are stored on your device. You do not need a Becken account. Automatic Google Drive backup is disabled in the current tester release.\n\nData stored in the app\n\nBecken stores your routines, exercise definitions, weights, repetitions, completed and unfinished workouts, workout history, and preferences on your device. These records support workout logging, previous-set suggestions, history, and resuming an unfinished session.\n\nBecken does not operate a server that receives your workout records. The current app has no advertising, analytics, or third-party crash-reporting SDKs, and does not sell your personal data.\n\nTerms acceptance on your device\n\nBecken stores a local record when you agree to its Terms of Service and Exercise Risk and Release. It includes the accepted text and version, text hashes, acknowledgment states, app version and build, device locale, document language, a random receipt identifier, and the acceptance time reported by your device clock. It is not a verified identity or an independently verified time.\n\nThese records stay in private app storage. They are not sent to the developer and are excluded from workout backups and Android device transfer. Older accepted versions are retained on the device. If an unreadable record needs recovery, its original bytes are preserved locally before recording a new agreement.\n\nYou can read or save your accepted terms and receipt from Terms and safety, or export all agreement records, including any preserved original files, as a ZIP file. An exported copy goes only to the destination you select. Uninstalling or clearing app storage removes the local acceptance records; exported copies remain where you saved them. Reinstalling requires a new agreement. Declining terms does not delete training data: you can still read existing records, export a backup or delete local training data.\n\nImports and manual backups\n\nYou can choose files to import and save a backup using Android’s file picker. Backups contain readable training data and settings; they are not encrypted by Becken. Keep them in a location you trust.\n\nIf you choose a cloud storage provider, send a backup to someone, or upload it to another service, that provider or recipient receives the data you share. Their privacy terms apply. Becken does not automatically send backups to its developer.\n\nGoogle Drive backup\n\nAutomatic Google Drive backup is not enabled in the current tester release. In a build where this feature is enabled, it requires you to select a Google account and explicitly authorize access. Becken requests access to Drive files it creates or that you authorize for the app, rather than general access to all your Drive files.\n\nWhen enabled and connected, this feature uploads a backup of your settings, exercises, routines, and completed and unfinished workouts directly to your selected Google Drive account. The app stores connection and backup status locally. Authorization tokens are obtained through Google Play services and are not persisted by Becken.\n\nDisconnecting stops future scheduled backups but does not delete a backup already in Drive or revoke the existing Google permission. Delete the file in Drive and remove Becken’s access in your Google account settings if desired. A transfer already in progress may complete when you disconnect. Google processes data under its Privacy Policy (https://policies.google.com/privacy).\n\nYour choices and deletion\n\nYou can edit or delete workout records using the app’s controls.\n\nYou can remove the app’s local data by clearing Becken’s storage in Android settings or uninstalling the app. Save a backup first if you want to keep your records.\n\nExported files and any cloud copies are separate. Delete those copies from their storage locations yourself; deleting local app data does not remove them.\n\nLocal records remain on your device until you delete them or the app’s storage is cleared. Becken disables Android’s automatic app-data backup and device-transfer backup for its stored app data.\n\nThis website and Google Play\n\nThis website does not use analytics scripts, advertising trackers, cookies, or browser storage. It is hosted on GitHub Pages. GitHub may process technical information, including your IP address, when serving the website, as described in the GitHub Privacy Statement (https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).\n\nFollowing the Google Play link takes you to Google’s service. Google handles store access, installation, and related platform data under its own privacy terms.\n\nSecurity\n\nBecken relies on Android’s app storage protections for local records. Protect your device and any backup files you create. No storage or transmission method can guarantee absolute security.\n\nChanges\n\nThis policy will be updated when the app’s data practices change, with a revised date above.\n",
+    "sha256": "bd35d8daf6bf085113ce9e0ab59689a9dfec2b89c301ac241ba32084b4d46f49"
+  }
+}

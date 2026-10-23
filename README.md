@@ -24,7 +24,7 @@ Run `python3 -m http.server 8000` from this directory and visit http://localhost
    Remove conflicting website A/AAAA records, but preserve email MX/TXT records. Optional IPv6 and domain verification instructions are in [GitHub's custom-domain documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
 5. When GitHub finishes its DNS check and certificate provisioning, enable **Enforce HTTPS**. `.app` domains require HTTPS.
 
-The public policy URL will be **https://becken.app/privacy/**. Add it in Play Console and in the Android app as part of release setup. Confirm that `support@becken.app` receives email; hosting the site does not provision email.
+The public policy URL is **https://becken.app/privacy/**. Use it in Play Console and the Android app as part of release setup. Hosting the site does not provision a support or privacy inquiry channel.
 
 Committing these files does not itself enable Pages or change domain DNS.
 
@@ -43,8 +43,8 @@ No app source, credentials, or personal training records belong in this public r
 
 Terms, privacy and downloaded text are reviewed exports from the app's canonical
 versioned legal sources. Do not independently rewrite `terms/`, `privacy/` or
-`legal/documents.json`. From the app checkout, after the operator details are
-confirmed, run `python3 scripts/legal.py --write --base origin/main --export-site
+`legal/documents.json`. From the app checkout, run
+`python3 scripts/legal.py --write --base origin/main --export-site
 /path/to/website`, then use `--check` with the same arguments. The generator
 protects terms text already merged in this repository's `origin/main`; fetch
 that branch before exporting. Retain every published terms version and archive
@@ -56,15 +56,18 @@ Interactive exercise features on the website would require their own acceptance
 flow. The static page must not claim that a footer alone records agreement or
 that all possible liability is excluded.
 
-Current implementation status: final operator legal name/contact confirmation is
-pending. Any local pages labeled as development fixtures are preview-only and
-must not be committed or published. Complete the production export before merging.
-The terms pages, updated privacy page and public legal JSON are intentionally not
-committed yet. The new legal tests require those exports and will fail until they
-exist. With temporary local fixture exports, all seven Python tests and a
-Chromium/Playwright check of six pages at 390px and 1440px passed; no horizontal
-overflow or scripts were detected, and print styling was checked. Fixtures were
-then removed. Repeat the checks on the final exported text before merging.
+The current documents describe the individual operating Becken under zendril.dev
+in Delaware. A personal name and email are omitted at the owner's request, and
+there is no invented contact form or email-reporting action. The generated pages,
+downloadable text, public legal JSON and terms archive use that chosen wording.
+
+Google Play separately requires a reachable listing support email and a privacy
+contact or inquiry mechanism. The current contact-free policy is not declared
+Play-compliant; establish a verified inquiry route before relying on it for Play
+publication. A working inquiry mechanism can avoid printing an email in the
+policy. See [Google's support requirements](https://support.google.com/googleplay/android-developer/answer/113477?hl=en)
+and [User Data policy](https://support.google.com/googleplay/android-developer/answer/10144311?hl=en).
+No store contact setting is changed by these website files.
 
 ## Changelog maintenance
 
