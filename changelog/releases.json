@@ -8,6 +8,21 @@
   },
   "releases": [
     {
+      "version": "0.6.7",
+      "title": "Terms and exercise safety",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [
+        "An offline first-use agreement for the Terms of Service and Exercise Risk and Release.",
+        "Terms and safety in Settings, with saved agreement copies and an offline Privacy Policy.",
+        "Read, back up or delete existing training records when declining terms.",
+        "Safety guidance and problem reporting beside exercise illustrations."
+      ],
+      "changed": [],
+      "fixed": [],
+      "playNotes": "Review the Terms and Exercise Risk and Release before training. Read terms and privacy information offline in Settings, and save your accepted copy. Declining preserves access to existing records for reading, backup or deletion. Exercise illustrations include safety guidance and a way to report problems."
+    },
+    {
       "version": "0.6.6",
       "title": "Exercise previews for Play testers",
       "channel": "development",

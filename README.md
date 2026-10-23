@@ -1,6 +1,6 @@
 # Becken website
 
-Minimal static landing page, changelog and Privacy Policy for **becken.app**. No production build step, JavaScript, third-party fonts, or analytics. The Android app's source stays in the separate private repository.
+Minimal static landing page, changelog, Terms of Service and Privacy Policy for **becken.app**. No production build step, JavaScript, third-party fonts, or analytics. The Android app's source stays in the separate private repository.
 
 ## Preview
 
@@ -38,6 +38,33 @@ Committing these files does not itself enable Pages or change domain DNS.
 - The three original screenshot PNGs are from `assets/play-store-examples/dark/` at app commit `92b1ac77df4a113902fbfd9851e7e888849eb07b`. They show sample data in Becken 0.6.1, captured on an Android 11 emulator at 1280 × 2856; they are not physical Pixel captures or screenshots of the 0.6.2 release. Pixels are unmodified, with decorative borders applied only by website CSS.
 
 No app source, credentials, or personal training records belong in this public repository.
+
+## Legal document maintenance
+
+Terms, privacy and downloaded text are reviewed exports from the app's canonical
+versioned legal sources. Do not independently rewrite `terms/`, `privacy/` or
+`legal/documents.json`. From the app checkout, after the operator details are
+confirmed, run `python3 scripts/legal.py --write --base origin/main --export-site
+/path/to/website`, then use `--check` with the same arguments. The generator
+protects terms text already merged in this repository's `origin/main`; fetch
+that branch before exporting. Retain every published terms version and archive
+index link. Run the website Python tests and preview phone/desktop/print layouts.
+
+The site displays the terms and exercise-risk notice; it does not record assent
+from visits or download clicks. The Android app asks for explicit agreement.
+Interactive exercise features on the website would require their own acceptance
+flow. The static page must not claim that a footer alone records agreement or
+that all possible liability is excluded.
+
+Current implementation status: final operator legal name/contact confirmation is
+pending. Any local pages labeled as development fixtures are preview-only and
+must not be committed or published. Complete the production export before merging.
+The terms pages, updated privacy page and public legal JSON are intentionally not
+committed yet. The new legal tests require those exports and will fail until they
+exist. With temporary local fixture exports, all seven Python tests and a
+Chromium/Playwright check of six pages at 390px and 1440px passed; no horizontal
+overflow or scripts were detected, and print styling was checked. Fixtures were
+then removed. Repeat the checks on the final exported text before merging.
 
 ## Changelog maintenance
 
