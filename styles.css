@@ -278,6 +278,26 @@ figcaption span {
   margin:30px 0;
   background:var(--surface)}
 
+.safety-note { color:var(--muted); font-size:13px; line-height:1.7; max-width:520px; margin-top:22px; }
+.safety-note a { color:var(--orange); text-decoration:underline; text-underline-offset:3px; }
+.policy { overflow-wrap:anywhere; }
+.policy section { scroll-margin-top:24px; }
+.policy .legal-important { margin-block:28px; padding:4px 20px 16px; border:1px solid var(--orange); border-radius:8px; background:var(--surface); }
+.policy .legal-important h2 { margin-top:20px; }
+.policy .legal-important p { color:var(--paper); }
+.legal-contents { border-block:1px solid var(--line); margin-block:28px; padding-block:12px; }
+.legal-contents li + li { margin-top:8px; }
+
+@media print {
+  body { background:#fff; color:#000; }
+  .site-header,.site-footer,.skip-link,.legal-contents { display:none; }
+  .policy { width:100%; max-width:none; padding:0; }
+  .policy p,.policy li,.policy a,.policy .legal-important p { color:#000; }
+  .policy .summary,.policy .legal-important { background:transparent; border-color:#000; }
+  .policy h1 { font-size:28pt; }
+  .policy h2 { font-size:16pt; break-after:avoid; }
+}
+
 @media(max-width:760px) {
   .wrap {
   width:calc(100% - 40px)}
