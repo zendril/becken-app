@@ -81,7 +81,7 @@ def render(data):
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header wrap">
     <a class="brand" href="../" aria-label="Becken home"><img src="../assets/logo.svg" width="42" height="42" alt=""><span>Becken</span></a>
-    <nav aria-label="Main navigation"><a href="../#screenshots">The app</a><a href="./" aria-current="page">Changelog</a><a href="../privacy/">Privacy</a></nav>
+    <nav aria-label="Main navigation"><a href="../#screenshots">The app</a><a href="./" aria-current="page">Changelog</a><a href="../terms/">Terms</a><a href="../privacy/">Privacy</a></nav>
   </header>
   <main id="main" class="history wrap">
     <div class="history-intro">
@@ -94,7 +94,7 @@ def render(data):
     <div class="release-list">''' + '\n'.join(articles) + '''</div>
     <p class="back-to-top"><a href="#main">Back to top ↑</a></p>
   </main>
-  <footer class="site-footer wrap"><span class="footer-brand">Becken <span>Make the next rep count.</span></span><nav aria-label="Footer navigation"><a href="./" aria-current="page">Changelog</a><a href="../privacy/">Privacy Policy</a></nav></footer>
+  <footer class="site-footer wrap"><span class="footer-brand">Becken <span>Make the next rep count.</span></span><nav aria-label="Footer navigation"><a href="./" aria-current="page">Changelog</a><a href="../terms/">Terms of Service</a><a href="../privacy/">Privacy Policy</a></nav></footer>
 </body>
 </html>
 '''
