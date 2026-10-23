@@ -8,6 +8,19 @@
   },
   "releases": [
     {
+      "version": "0.6.9",
+      "title": "Consistent app and Play versions",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [],
+      "changed": [
+        "Play releases use the committed app version, with an automatically derived build code.",
+        "Every pull request prepares the next app version before merge."
+      ],
+      "fixed": [],
+      "playNotes": "App and Play releases share the same version. Build codes are assigned automatically so each update can be identified consistently."
+    },
+    {
       "version": "0.6.8",
       "title": "Illustration previews for every built-in exercise",
       "channel": "development",
