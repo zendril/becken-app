@@ -8,6 +8,18 @@
   },
   "releases": [
     {
+      "version": "0.6.12",
+      "title": "More reliable website changelog updates",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [],
+      "changed": [],
+      "fixed": [
+        "Website changelog updates retry temporary GitHub errors before stopping."
+      ],
+      "playNotes": "Improved reliability of website changelog updates when GitHub is temporarily unavailable."
+    },
+    {
       "version": "0.6.11",
       "title": "Compact workout logging",
       "channel": "development",
