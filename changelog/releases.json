@@ -8,6 +8,18 @@
   },
   "releases": [
     {
+      "version": "0.6.13",
+      "title": "More reliable release checks",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [],
+      "changed": [],
+      "fixed": [
+        "Prevent intermittent timeouts in automated workout checks before release."
+      ],
+      "playNotes": "Maintenance update improving the reliability of automated release checks."
+    },
+    {
       "version": "0.6.12",
       "title": "More reliable website changelog updates",
       "channel": "development",
