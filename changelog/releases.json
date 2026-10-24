@@ -8,6 +8,20 @@
   },
   "releases": [
     {
+      "version": "0.6.10",
+      "title": "Sweeteners during workouts",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [
+        "Enable or change sweeteners during a workout using a small icon beside each exercise."
+      ],
+      "changed": [
+        "Only enabled sweetener fields appear in set rows, with separate amounts for every set."
+      ],
+      "fixed": [],
+      "playNotes": "Add or change eccentric, chains and inverse chains during a workout. Tap the small sparkle icon beside the exercise, then adjust the enabled values for each set."
+    },
+    {
       "version": "0.6.9",
       "title": "Consistent app and Play versions",
       "channel": "development",
