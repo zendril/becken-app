@@ -8,6 +8,34 @@
   },
   "releases": [
     {
+      "version": "0.6.12",
+      "title": "More reliable website changelog updates",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [],
+      "changed": [],
+      "fixed": [
+        "Website changelog updates retry temporary GitHub errors before stopping."
+      ],
+      "playNotes": "Improved reliability of website changelog updates when GitHub is temporarily unavailable."
+    },
+    {
+      "version": "0.6.11",
+      "title": "Compact workout logging",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [
+        "Collapsible exercise sections and compact set rows.",
+        "Thin brackets show linked exercises while planning a routine."
+      ],
+      "changed": [
+        "Only the current set opens for entry. Completing a set collapses it and opens the next set; tap any compact row to edit it.",
+        "Filled checkmarks and tinted rows distinguish completed sets from sets still to log."
+      ],
+      "fixed": [],
+      "playNotes": "Collapse exercise sections and keep upcoming and completed sets in compact rows. The current set opens for entry, then collapses when checked off. Tap any set to edit it. Thin brackets show linked exercises in the routine editor."
+    },
+    {
       "version": "0.6.10",
       "title": "Sweeteners during workouts",
       "channel": "development",
