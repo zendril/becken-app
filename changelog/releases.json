@@ -8,6 +8,18 @@
   },
   "releases": [
     {
+      "version": "0.6.14",
+      "title": "Workout check reliability",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [],
+      "changed": [],
+      "fixed": [
+        "Wait for saved workout changes to appear on screen in automated checks."
+      ],
+      "playNotes": "Maintenance update improving automated checks for workout editing."
+    },
+    {
       "version": "0.6.13",
       "title": "More reliable release checks",
       "channel": "development",
