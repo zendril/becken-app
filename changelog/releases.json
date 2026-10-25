@@ -8,6 +8,19 @@
   },
   "releases": [
     {
+      "version": "0.6.15",
+      "title": "Browse training days",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [
+        "View a training day’s exercises, sets, pairings and starting suggestions without starting a workout or editing the routine.",
+        "Open exercise illustration previews directly from the day browser."
+      ],
+      "changed": [],
+      "fixed": [],
+      "playNotes": "Use View day to browse exercises, sets, pairings and starting suggestions before training. Open exercise illustration previews without starting a workout or editing your routine."
+    },
+    {
       "version": "0.6.14",
       "title": "Workout check reliability",
       "channel": "development",
