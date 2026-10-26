@@ -8,6 +8,18 @@
   },
   "releases": [
     {
+      "version": "0.6.16",
+      "title": "Your training day names",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [],
+      "changed": [
+        "Show training day names exactly as entered, without automatic number prefixes in the routine list."
+      ],
+      "fixed": [],
+      "playNotes": "Training days now show your chosen names without automatic number prefixes in the routine list."
+    },
+    {
       "version": "0.6.15",
       "title": "Browse training days",
       "channel": "development",
