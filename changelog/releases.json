@@ -8,6 +8,22 @@
   },
   "releases": [
     {
+      "version": "0.6.17",
+      "title": "Reliable saves and preserved drafts",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [],
+      "changed": [
+        "Save edits faster when workout history is large."
+      ],
+      "fixed": [
+        "Prevent invalid workout edits from making saved data unreadable.",
+        "Reject backup exports above the restore limit before writing the destination file.",
+        "Keep exercise edits, routine suggestions, exercise pickers and browsing position during screen recreation."
+      ],
+      "playNotes": "Protect saved workouts from invalid edits and prevent backups that exceed the restore limit. Keep exercise edits, routine suggestions, pickers and browsing position during screen recreation. Save edits faster with large workout histories."
+    },
+    {
       "version": "0.6.16",
       "title": "Your training day names",
       "channel": "development",
