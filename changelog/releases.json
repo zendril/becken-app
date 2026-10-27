@@ -8,6 +8,22 @@
   },
   "releases": [
     {
+      "version": "0.7.0",
+      "title": "Reps, timed sets and distance carries",
+      "channel": "development",
+      "releasedOn": null,
+      "playNotes": "Choose reps, seconds or distance for each exercise. Set a default when creating an exercise and override it in a routine. New one-handed and two-handed Farmer’s Carry entries include illustration previews. Create importable routines with the AI guide and release-matched schema on becken.app.",
+      "added": [
+        "Choose a default measurement when creating an exercise, then log only reps, seconds or distance for each routine entry.",
+        "One-handed and two-handed Farmer’s Carry entries have separate histories, distance defaults and illustration previews.",
+        "A public AI workout guide, downloadable import schema and example follow the shipped app through validated website updates."
+      ],
+      "changed": [
+        "Timed and distance results support per-set history suggestions, feet/meters conversion and full backup/restore. Existing routines and workouts retain their rep-based values."
+      ],
+      "fixed": []
+    },
+    {
       "version": "0.6.17",
       "title": "Reliable saves and preserved drafts",
       "channel": "development",
