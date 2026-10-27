@@ -1,0 +1,95 @@
+{
+  "format": "liftlog.routine",
+  "version": 2,
+  "exercises": [
+    {
+      "id": "squat",
+      "name": "Barbell squat",
+      "equipment": "BARBELL"
+    },
+    {
+      "id": "leg-press",
+      "name": "Leg press",
+      "equipment": "MACHINE"
+    },
+    {
+      "id": "bench",
+      "name": "Bench press",
+      "equipment": "BARBELL"
+    },
+    {
+      "id": "curl",
+      "name": "Dumbbell curl",
+      "equipment": "DUMBBELL",
+      "perHand": true
+    },
+    {
+      "id": "row",
+      "name": "Seated cable row",
+      "equipment": "CABLE"
+    },
+    {
+      "id": "pull-up",
+      "name": "Pull-up",
+      "equipment": "BODYWEIGHT"
+    }
+  ],
+  "routine": {
+    "name": "Mass Gainer",
+    "unit": "LB",
+    "days": [
+      {
+        "name": "Legs",
+        "exercises": [
+          {
+            "exerciseId": "squat",
+            "setCount": 3,
+            "startingReps": 8,
+            "sweeteners": [
+              "ECCENTRIC",
+              "CHAINS"
+            ]
+          },
+          {
+            "exerciseId": "leg-press",
+            "setCount": 3,
+            "startingReps": 10,
+            "sweeteners": []
+          }
+        ]
+      },
+      {
+        "name": "Chest & back",
+        "exercises": [
+          {
+            "exerciseId": "bench",
+            "setCount": 3,
+            "startingReps": 8,
+            "sweeteners": []
+          },
+          {
+            "exerciseId": "curl",
+            "setCount": 3,
+            "startingReps": 10,
+            "pairId": "curls-and-rows",
+            "sweeteners": []
+          },
+          {
+            "exerciseId": "row",
+            "setCount": 3,
+            "startingReps": 10,
+            "pairId": "curls-and-rows",
+            "sweeteners": []
+          },
+          {
+            "exerciseId": "pull-up",
+            "setCount": 2,
+            "startingWeight": 0,
+            "startingReps": 5,
+            "sweeteners": []
+          }
+        ]
+      }
+    ]
+  }
+}
