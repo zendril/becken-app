@@ -8,6 +8,22 @@
   },
   "releases": [
     {
+      "version": "0.7.1",
+      "title": "Seated cable and face-pull guides",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [
+        "Add four-step illustration previews for seated single-arm cable shoulder press and seated Pallof press.",
+        "Add Face pull with overhead raise as a separate exercise with an eight-step illustration guide."
+      ],
+      "changed": [],
+      "fixed": [
+        "Recognize these imported cable exercises with optional “(each side)” wording and spacing or hyphen variations, preserving saved names and history.",
+        "Update face-pull illustrations with an underhand grip, inward-facing palms, corrected rope paths, wider hands, shoulder-height elbows and an elbows-first return."
+      ],
+      "playNotes": "Add guides for imported seated cable shoulder presses and seated Pallof presses, including “(each side)” names. Update face-pull illustrations with an underhand grip, wide hands and an elbows-first return. Add Face pull with overhead raise as a separate exercise with eight illustrated steps."
+    },
+    {
       "version": "0.7.0",
       "title": "Reps, timed sets and distance carries",
       "channel": "development",
