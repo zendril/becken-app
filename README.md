@@ -30,6 +30,13 @@ Committing these files does not itself enable Pages or change domain DNS.
 
 ## Content maintenance
 
+- Every page uses the same header links and order from
+  `scripts/site_navigation.py`, including legal and schema archives. The
+  changelog and workout-page generators share its renderer. Run
+  `python3 scripts/site_navigation.py --write` after adding or updating pages,
+  then `--check`; CI checks all HTML pages for drift. Legal export templates in
+  the app repository must produce the same navigation before publishing.
+
 - The AI import guide is at `/guides/ai-workouts/`. It links to the shipped routine
   schema and example under `/schemas/workout/release/`; older versions stay under
   `/schemas/workout/vN/`. The initial export matches Play Internal build 0.6.17
