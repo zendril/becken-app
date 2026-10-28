@@ -8,6 +8,18 @@
   },
   "releases": [
     {
+      "version": "0.7.2",
+      "title": "Consistent website navigation",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [],
+      "changed": [],
+      "fixed": [
+        "Keep the AI workout guide available in the header when opening terms, privacy and archived legal pages."
+      ],
+      "playNotes": "Keep website navigation consistent, including the AI workout guide on terms, privacy and archived legal pages."
+    },
+    {
       "version": "0.7.1",
       "title": "Seated cable and face-pull guides",
       "channel": "development",
