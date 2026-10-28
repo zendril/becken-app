@@ -6,6 +6,7 @@ from html import escape
 import json
 from pathlib import Path
 import re
+from site_navigation import render_navigation
 
 ROOT = Path(__file__).resolve().parents[1]
 SECTIONS = ('added', 'changed', 'fixed')
@@ -81,7 +82,7 @@ def render(data):
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header wrap">
     <a class="brand" href="../" aria-label="Becken home"><img src="../assets/logo.svg" width="42" height="42" alt=""><span>Becken</span></a>
-    <nav aria-label="Main navigation"><a href="../#screenshots">The app</a><a href="./" aria-current="page">Changelog</a><a href="../terms/">Terms</a><a href="../privacy/">Privacy</a></nav>
+    ''' + render_navigation('changelog') + '''
   </header>
   <main id="main" class="history wrap">
     <div class="history-intro">

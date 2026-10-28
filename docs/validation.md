@@ -1,4 +1,30 @@
-# Changelog validation
+# Website validation
+
+## 2026-10-27 — Consistent header navigation
+
+- All 10 HTML pages show the same five links in the same order: The app, AI
+  workout guide, Changelog, Terms, Privacy. This includes the schema pages and
+  archived terms. Current-page highlighting uses `aria-current="page"`.
+- All 12 Python tests, both generated-page checks and the new all-page navigation
+  check pass. The navigation check first reproduced the missing link on the
+  original changelog, and is now part of the required website CI job.
+- Chromium verified all 10 pages at 320, 390 and 1440 pixels: consistent labels
+  and resolved destinations, no clipped header links or horizontal page overflow,
+  HTTP 200 for each header destination and no browser page errors. Keyboard Tab
+  navigation followed by Enter opens the AI guide from the changelog.
+- The app's legal exporter reproduces the updated legal-page headers, including
+  nested archives. Legal text, downloads, hashes and public schema data are
+  unchanged. The website work was previewed locally; it has not been deployed.
+
+Browser captures of the changelog header at a 1440-pixel viewport:
+
+![Original changelog header](images/navigation/changelog-before-desktop.png)
+![Consistent header including the AI workout guide](images/navigation/changelog-after-desktop.png)
+
+[Phone changelog](images/navigation/changelog-after-phone.png) ·
+[Phone archived terms](images/navigation/archived-terms-phone.png)
+
+## Initial changelog
 
 The initial page was checked locally with Python and headless Chromium:
 
