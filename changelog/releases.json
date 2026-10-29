@@ -8,6 +8,20 @@
   },
   "releases": [
     {
+      "version": "0.7.3",
+      "title": "Clearer history and faster set logging",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [],
+      "changed": [
+        "Use the keyboard check mark in reps, seconds or distance to complete a valid set and advance to the next set."
+      ],
+      "fixed": [
+        "Show how many additional completed exercises are hidden in each workout history preview."
+      ],
+      "playNotes": "Workout history now shows a count of additional completed exercises beyond the preview. Use the keyboard check mark in reps, seconds or distance to complete a valid set and move to the next one."
+    },
+    {
       "version": "0.7.2",
       "title": "Consistent website navigation",
       "channel": "development",
