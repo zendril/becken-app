@@ -1,10 +1,10 @@
 {
   "format": "becken.workout-schema",
   "version": 1,
-  "schemaVersion": 2,
-  "minimumAppVersion": "0.6.4",
-  "schemaSha256": "44764ee0dc9ff87e16b830f83750b4f713da46259eda7f8a908f44eb03ddf8b1",
-  "exampleSha256": "1e355d7b755f7eb4314d5ebc7e4944d9db9d0f86bcbf7045eafad4456929a286",
-  "appVersion": "0.6.17",
-  "versionCode": 6017
+  "schemaVersion": 3,
+  "minimumAppVersion": "0.7.0",
+  "schemaSha256": "052cbb1033e39479c225b27b8c6039e84da9136e9aae5ff0ed8a99c1df7e219b",
+  "exampleSha256": "8954f30c368bfdef5a32ce686c1e631ed3ad36f0e60504c68ddcbbc254c64c28",
+  "appVersion": "0.7.3",
+  "versionCode": 7003
 }

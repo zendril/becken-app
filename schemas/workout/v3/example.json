@@ -1,0 +1,83 @@
+{
+  "format": "liftlog.routine",
+  "version": 3,
+  "exercises": [
+    {
+      "id": "squat",
+      "name": "Barbell squat",
+      "equipment": "BARBELL",
+      "perHand": true,
+      "group": "LEGS",
+      "defaultMeasurementType": "REPS"
+    },
+    {
+      "id": "two",
+      "name": "Farmer's carry (two-handed)",
+      "equipment": "DUMBBELL",
+      "perHand": false,
+      "group": "FULL_BODY",
+      "defaultMeasurementType": "DISTANCE"
+    },
+    {
+      "id": "one",
+      "name": "Farmer's carry (one-handed)",
+      "equipment": "DUMBBELL",
+      "perHand": true,
+      "group": "FULL_BODY",
+      "defaultMeasurementType": "DISTANCE"
+    }
+  ],
+  "routine": {
+    "name": "Example: strength and carries",
+    "unit": "LB",
+    "days": [
+      {
+        "name": "Strength and distance",
+        "exercises": [
+          {
+            "exerciseId": "squat",
+            "setCount": 3,
+            "measurementType": "REPS",
+            "startingWeight": 45,
+            "startingReps": 8
+          },
+          {
+            "exerciseId": "two",
+            "setCount": 2,
+            "measurementType": "DISTANCE",
+            "distanceUnit": "FT",
+            "startingWeight": 80,
+            "startingDistance": 100
+          },
+          {
+            "exerciseId": "one",
+            "setCount": 4,
+            "measurementType": "DISTANCE",
+            "distanceUnit": "M",
+            "startingWeight": 40,
+            "startingDistance": 20
+          }
+        ]
+      },
+      {
+        "name": "Timed carries",
+        "exercises": [
+          {
+            "exerciseId": "two",
+            "setCount": 2,
+            "measurementType": "TIME",
+            "startingWeight": 80,
+            "startingSeconds": 30
+          },
+          {
+            "exerciseId": "one",
+            "setCount": 4,
+            "measurementType": "TIME",
+            "startingWeight": 40,
+            "startingSeconds": 30
+          }
+        ]
+      }
+    ]
+  }
+}

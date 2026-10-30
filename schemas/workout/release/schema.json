@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Becken routine v2",
+  "title": "Becken routine import v3",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -14,7 +14,7 @@
       "const": "liftlog.routine"
     },
     "version": {
-      "const": 2
+      "const": 3
     },
     "exercises": {
       "type": "array",
@@ -82,6 +82,14 @@
             null
           ],
           "default": null
+        },
+        "defaultMeasurementType": {
+          "enum": [
+            "REPS",
+            "TIME",
+            "DISTANCE"
+          ],
+          "default": "REPS"
         }
       }
     },
@@ -156,8 +164,98 @@
             ]
           },
           "default": []
+        },
+        "measurementType": {
+          "enum": [
+            "REPS",
+            "TIME",
+            "DISTANCE"
+          ],
+          "default": "REPS"
+        },
+        "distanceUnit": {
+          "enum": [
+            "FT",
+            "M",
+            null
+          ]
+        },
+        "startingSeconds": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 86400
+        },
+        "startingDistance": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
         }
-      }
+      },
+      "oneOf": [
+        {
+          "properties": {
+            "measurementType": {
+              "const": "REPS"
+            },
+            "distanceUnit": {
+              "type": "null"
+            },
+            "startingSeconds": {
+              "type": "null"
+            },
+            "startingDistance": {
+              "type": "null"
+            }
+          }
+        },
+        {
+          "properties": {
+            "measurementType": {
+              "const": "TIME"
+            },
+            "distanceUnit": {
+              "type": "null"
+            },
+            "startingReps": {
+              "type": "null"
+            },
+            "startingDistance": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "measurementType"
+          ]
+        },
+        {
+          "properties": {
+            "measurementType": {
+              "const": "DISTANCE"
+            },
+            "distanceUnit": {
+              "enum": [
+                "FT",
+                "M"
+              ]
+            },
+            "startingReps": {
+              "type": "null"
+            },
+            "startingSeconds": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "measurementType",
+            "distanceUnit"
+          ]
+        }
+      ]
     },
     "day": {
       "type": "object",

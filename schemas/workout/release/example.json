@@ -1,92 +1,80 @@
 {
   "format": "liftlog.routine",
-  "version": 2,
+  "version": 3,
   "exercises": [
     {
       "id": "squat",
       "name": "Barbell squat",
-      "equipment": "BARBELL"
+      "equipment": "BARBELL",
+      "perHand": true,
+      "group": "LEGS",
+      "defaultMeasurementType": "REPS"
     },
     {
-      "id": "leg-press",
-      "name": "Leg press",
-      "equipment": "MACHINE"
-    },
-    {
-      "id": "bench",
-      "name": "Bench press",
-      "equipment": "BARBELL"
-    },
-    {
-      "id": "curl",
-      "name": "Dumbbell curl",
+      "id": "two",
+      "name": "Farmer's carry (two-handed)",
       "equipment": "DUMBBELL",
-      "perHand": true
+      "perHand": false,
+      "group": "FULL_BODY",
+      "defaultMeasurementType": "DISTANCE"
     },
     {
-      "id": "row",
-      "name": "Seated cable row",
-      "equipment": "CABLE"
-    },
-    {
-      "id": "pull-up",
-      "name": "Pull-up",
-      "equipment": "BODYWEIGHT"
+      "id": "one",
+      "name": "Farmer's carry (one-handed)",
+      "equipment": "DUMBBELL",
+      "perHand": true,
+      "group": "FULL_BODY",
+      "defaultMeasurementType": "DISTANCE"
     }
   ],
   "routine": {
-    "name": "Mass Gainer",
+    "name": "Example: strength and carries",
     "unit": "LB",
     "days": [
       {
-        "name": "Legs",
+        "name": "Strength and distance",
         "exercises": [
           {
             "exerciseId": "squat",
             "setCount": 3,
-            "startingReps": 8,
-            "sweeteners": [
-              "ECCENTRIC",
-              "CHAINS"
-            ]
+            "measurementType": "REPS",
+            "startingWeight": 45,
+            "startingReps": 8
           },
           {
-            "exerciseId": "leg-press",
-            "setCount": 3,
-            "startingReps": 10,
-            "sweeteners": []
+            "exerciseId": "two",
+            "setCount": 2,
+            "measurementType": "DISTANCE",
+            "distanceUnit": "FT",
+            "startingWeight": 80,
+            "startingDistance": 100
+          },
+          {
+            "exerciseId": "one",
+            "setCount": 4,
+            "measurementType": "DISTANCE",
+            "distanceUnit": "M",
+            "startingWeight": 40,
+            "startingDistance": 20
           }
         ]
       },
       {
-        "name": "Chest & back",
+        "name": "Timed carries",
         "exercises": [
           {
-            "exerciseId": "bench",
-            "setCount": 3,
-            "startingReps": 8,
-            "sweeteners": []
-          },
-          {
-            "exerciseId": "curl",
-            "setCount": 3,
-            "startingReps": 10,
-            "pairId": "curls-and-rows",
-            "sweeteners": []
-          },
-          {
-            "exerciseId": "row",
-            "setCount": 3,
-            "startingReps": 10,
-            "pairId": "curls-and-rows",
-            "sweeteners": []
-          },
-          {
-            "exerciseId": "pull-up",
+            "exerciseId": "two",
             "setCount": 2,
-            "startingWeight": 0,
-            "startingReps": 5,
-            "sweeteners": []
+            "measurementType": "TIME",
+            "startingWeight": 80,
+            "startingSeconds": 30
+          },
+          {
+            "exerciseId": "one",
+            "setCount": 4,
+            "measurementType": "TIME",
+            "startingWeight": 40,
+            "startingSeconds": 30
           }
         ]
       }
