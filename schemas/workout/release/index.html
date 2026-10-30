@@ -7,102 +7,90 @@
 <a class="skip-link" href="#main">Skip to content</a><header class="site-header wrap">
 <a class="brand" href="../../../" aria-label="Becken home"><img src="../../../assets/logo.svg" width="42" height="42" alt=""><span>Becken</span></a>
 <nav aria-label="Main navigation"><a href="../../../#screenshots">The app</a><a href="../../../guides/ai-workouts/">AI workout guide</a><a href="../../../changelog/">Changelog</a><a href="../../../terms/">Terms</a><a href="../../../privacy/">Privacy</a></nav></header>
-<main id="main" class="policy wrap workout-guide"><h1>Workout import schema · release</h1><p>Release follows the latest shipped Play build, currently <strong>0.6.17</strong>. Becken is in private Internal testing; this does not announce public availability.</p><p>This file creates a reusable routine using <code>liftlog.routine</code>, schema <strong>2</strong>. It imports into Becken <strong>0.6.4</strong> and later versions supporting this schema.</p>
+<main id="main" class="policy wrap workout-guide"><h1>Workout import schema · release</h1><p>Release follows the latest shipped Play build, currently <strong>0.7.3</strong>. Becken is in private Internal testing; this does not announce public availability.</p><p>This file creates a reusable routine using <code>liftlog.routine</code>, schema <strong>3</strong>. It imports into Becken <strong>0.7.0</strong> and later versions supporting this schema.</p>
 <p><a href="schema.json">Read or download the JSON Schema</a> · <a href="example.json" download="becken-workout.json">Download example workout</a> · <a href="../../../guides/ai-workouts/">Create a workout with AI</a></p>
 <p>Import with <strong>Routines → Import</strong>, then review the preview. Import creates a new routine; it does not replace an existing routine or restore a backup.</p>
 <h2>File structure</h2><p>Supply exercise definitions in <code>exercises</code>, and a named <code>routine</code> with its weight unit and ordered days. Each day's entries reference an exercise ID. Use the exact format, version and fields in the linked schema.</p>
-<h2>Exercise entries</h2><div class="table-scroll"><table><thead><tr><th>Field</th><th>Schema rule</th></tr></thead><tbody><tr><th scope="row"><code>exerciseId</code></th><td>{&quot;$ref&quot;: &quot;#/$defs/id&quot;}</td></tr><tr><th scope="row"><code>setCount</code></th><td>{&quot;type&quot;: &quot;integer&quot;, &quot;minimum&quot;: 1, &quot;maximum&quot;: 50, &quot;default&quot;: 3}</td></tr><tr><th scope="row"><code>startingWeight</code></th><td>{&quot;type&quot;: [&quot;number&quot;, &quot;null&quot;], &quot;minimum&quot;: 0, &quot;maximum&quot;: 100000}</td></tr><tr><th scope="row"><code>startingReps</code></th><td>{&quot;type&quot;: [&quot;integer&quot;, &quot;null&quot;], &quot;minimum&quot;: 1, &quot;maximum&quot;: 10000}</td></tr><tr><th scope="row"><code>pairId</code></th><td>{&quot;anyOf&quot;: [{&quot;$ref&quot;: &quot;#/$defs/id&quot;}, {&quot;type&quot;: &quot;null&quot;}]}</td></tr><tr><th scope="row"><code>sweeteners</code></th><td>{&quot;type&quot;: &quot;array&quot;, &quot;items&quot;: {&quot;enum&quot;: [&quot;ECCENTRIC&quot;, &quot;CHAINS&quot;, &quot;INVERSE_CHAINS&quot;]}, &quot;uniqueItems&quot;: true, &quot;maxItems&quot;: 2, &quot;not&quot;: {&quot;allOf&quot;: [{&quot;contains&quot;: {&quot;const&quot;: &quot;CHAINS&quot;}}, {&quot;contains&quot;: {&quot;const&quot;: &quot;INVERSE_CHAINS&quot;}}]}, &quot;default&quot;: []}</td></tr></tbody></table></div>
+<h2>Exercise entries</h2><div class="table-scroll"><table><thead><tr><th>Field</th><th>Schema rule</th></tr></thead><tbody><tr><th scope="row"><code>exerciseId</code></th><td>{&quot;$ref&quot;: &quot;#/$defs/id&quot;}</td></tr><tr><th scope="row"><code>setCount</code></th><td>{&quot;type&quot;: &quot;integer&quot;, &quot;minimum&quot;: 1, &quot;maximum&quot;: 50, &quot;default&quot;: 3}</td></tr><tr><th scope="row"><code>startingWeight</code></th><td>{&quot;type&quot;: [&quot;number&quot;, &quot;null&quot;], &quot;minimum&quot;: 0, &quot;maximum&quot;: 100000}</td></tr><tr><th scope="row"><code>startingReps</code></th><td>{&quot;type&quot;: [&quot;integer&quot;, &quot;null&quot;], &quot;minimum&quot;: 1, &quot;maximum&quot;: 10000}</td></tr><tr><th scope="row"><code>pairId</code></th><td>{&quot;anyOf&quot;: [{&quot;$ref&quot;: &quot;#/$defs/id&quot;}, {&quot;type&quot;: &quot;null&quot;}]}</td></tr><tr><th scope="row"><code>sweeteners</code></th><td>{&quot;type&quot;: &quot;array&quot;, &quot;items&quot;: {&quot;enum&quot;: [&quot;ECCENTRIC&quot;, &quot;CHAINS&quot;, &quot;INVERSE_CHAINS&quot;]}, &quot;uniqueItems&quot;: true, &quot;maxItems&quot;: 2, &quot;not&quot;: {&quot;allOf&quot;: [{&quot;contains&quot;: {&quot;const&quot;: &quot;CHAINS&quot;}}, {&quot;contains&quot;: {&quot;const&quot;: &quot;INVERSE_CHAINS&quot;}}]}, &quot;default&quot;: []}</td></tr><tr><th scope="row"><code>measurementType</code></th><td>{&quot;enum&quot;: [&quot;REPS&quot;, &quot;TIME&quot;, &quot;DISTANCE&quot;], &quot;default&quot;: &quot;REPS&quot;}</td></tr><tr><th scope="row"><code>distanceUnit</code></th><td>{&quot;enum&quot;: [&quot;FT&quot;, &quot;M&quot;, null]}</td></tr><tr><th scope="row"><code>startingSeconds</code></th><td>{&quot;type&quot;: [&quot;integer&quot;, &quot;null&quot;], &quot;minimum&quot;: 1, &quot;maximum&quot;: 86400}</td></tr><tr><th scope="row"><code>startingDistance</code></th><td>{&quot;type&quot;: [&quot;number&quot;, &quot;null&quot;], &quot;exclusiveMinimum&quot;: 0}</td></tr></tbody></table></div>
 <h2>Units and import rules</h2><p>Starting weights use the routine's lb or kg unit. Dumbbells use <code>perHand: true</code> for weight in each hand or <code>false</code> for combined weight. Bodyweight entries record added weight, with 0 for unweighted. Starting values are suggestions and never count as completed work.</p>
 <p>Files must be UTF-8 JSON under 2 MiB, with unique IDs, valid exercise references, no repeated exercise within a day, and exactly two entries for each non-null pair ID. The schema describes structure; Becken additionally checks references and pairs. Unknown fields and unsupported versions are rejected.</p>
 <h2>Example</h2><p>These quantities demonstrate the file format; adapt the routine to your own goals and experience.</p><pre><code>{
   &quot;format&quot;: &quot;liftlog.routine&quot;,
-  &quot;version&quot;: 2,
+  &quot;version&quot;: 3,
   &quot;exercises&quot;: [
     {
       &quot;id&quot;: &quot;squat&quot;,
       &quot;name&quot;: &quot;Barbell squat&quot;,
-      &quot;equipment&quot;: &quot;BARBELL&quot;
+      &quot;equipment&quot;: &quot;BARBELL&quot;,
+      &quot;perHand&quot;: true,
+      &quot;group&quot;: &quot;LEGS&quot;,
+      &quot;defaultMeasurementType&quot;: &quot;REPS&quot;
     },
     {
-      &quot;id&quot;: &quot;leg-press&quot;,
-      &quot;name&quot;: &quot;Leg press&quot;,
-      &quot;equipment&quot;: &quot;MACHINE&quot;
-    },
-    {
-      &quot;id&quot;: &quot;bench&quot;,
-      &quot;name&quot;: &quot;Bench press&quot;,
-      &quot;equipment&quot;: &quot;BARBELL&quot;
-    },
-    {
-      &quot;id&quot;: &quot;curl&quot;,
-      &quot;name&quot;: &quot;Dumbbell curl&quot;,
+      &quot;id&quot;: &quot;two&quot;,
+      &quot;name&quot;: &quot;Farmer&#x27;s carry (two-handed)&quot;,
       &quot;equipment&quot;: &quot;DUMBBELL&quot;,
-      &quot;perHand&quot;: true
+      &quot;perHand&quot;: false,
+      &quot;group&quot;: &quot;FULL_BODY&quot;,
+      &quot;defaultMeasurementType&quot;: &quot;DISTANCE&quot;
     },
     {
-      &quot;id&quot;: &quot;row&quot;,
-      &quot;name&quot;: &quot;Seated cable row&quot;,
-      &quot;equipment&quot;: &quot;CABLE&quot;
-    },
-    {
-      &quot;id&quot;: &quot;pull-up&quot;,
-      &quot;name&quot;: &quot;Pull-up&quot;,
-      &quot;equipment&quot;: &quot;BODYWEIGHT&quot;
+      &quot;id&quot;: &quot;one&quot;,
+      &quot;name&quot;: &quot;Farmer&#x27;s carry (one-handed)&quot;,
+      &quot;equipment&quot;: &quot;DUMBBELL&quot;,
+      &quot;perHand&quot;: true,
+      &quot;group&quot;: &quot;FULL_BODY&quot;,
+      &quot;defaultMeasurementType&quot;: &quot;DISTANCE&quot;
     }
   ],
   &quot;routine&quot;: {
-    &quot;name&quot;: &quot;Mass Gainer&quot;,
+    &quot;name&quot;: &quot;Example: strength and carries&quot;,
     &quot;unit&quot;: &quot;LB&quot;,
     &quot;days&quot;: [
       {
-        &quot;name&quot;: &quot;Legs&quot;,
+        &quot;name&quot;: &quot;Strength and distance&quot;,
         &quot;exercises&quot;: [
           {
             &quot;exerciseId&quot;: &quot;squat&quot;,
             &quot;setCount&quot;: 3,
-            &quot;startingReps&quot;: 8,
-            &quot;sweeteners&quot;: [
-              &quot;ECCENTRIC&quot;,
-              &quot;CHAINS&quot;
-            ]
+            &quot;measurementType&quot;: &quot;REPS&quot;,
+            &quot;startingWeight&quot;: 45,
+            &quot;startingReps&quot;: 8
           },
           {
-            &quot;exerciseId&quot;: &quot;leg-press&quot;,
-            &quot;setCount&quot;: 3,
-            &quot;startingReps&quot;: 10,
-            &quot;sweeteners&quot;: []
+            &quot;exerciseId&quot;: &quot;two&quot;,
+            &quot;setCount&quot;: 2,
+            &quot;measurementType&quot;: &quot;DISTANCE&quot;,
+            &quot;distanceUnit&quot;: &quot;FT&quot;,
+            &quot;startingWeight&quot;: 80,
+            &quot;startingDistance&quot;: 100
+          },
+          {
+            &quot;exerciseId&quot;: &quot;one&quot;,
+            &quot;setCount&quot;: 4,
+            &quot;measurementType&quot;: &quot;DISTANCE&quot;,
+            &quot;distanceUnit&quot;: &quot;M&quot;,
+            &quot;startingWeight&quot;: 40,
+            &quot;startingDistance&quot;: 20
           }
         ]
       },
       {
-        &quot;name&quot;: &quot;Chest &amp; back&quot;,
+        &quot;name&quot;: &quot;Timed carries&quot;,
         &quot;exercises&quot;: [
           {
-            &quot;exerciseId&quot;: &quot;bench&quot;,
-            &quot;setCount&quot;: 3,
-            &quot;startingReps&quot;: 8,
-            &quot;sweeteners&quot;: []
-          },
-          {
-            &quot;exerciseId&quot;: &quot;curl&quot;,
-            &quot;setCount&quot;: 3,
-            &quot;startingReps&quot;: 10,
-            &quot;pairId&quot;: &quot;curls-and-rows&quot;,
-            &quot;sweeteners&quot;: []
-          },
-          {
-            &quot;exerciseId&quot;: &quot;row&quot;,
-            &quot;setCount&quot;: 3,
-            &quot;startingReps&quot;: 10,
-            &quot;pairId&quot;: &quot;curls-and-rows&quot;,
-            &quot;sweeteners&quot;: []
-          },
-          {
-            &quot;exerciseId&quot;: &quot;pull-up&quot;,
+            &quot;exerciseId&quot;: &quot;two&quot;,
             &quot;setCount&quot;: 2,
-            &quot;startingWeight&quot;: 0,
-            &quot;startingReps&quot;: 5,
-            &quot;sweeteners&quot;: []
+            &quot;measurementType&quot;: &quot;TIME&quot;,
+            &quot;startingWeight&quot;: 80,
+            &quot;startingSeconds&quot;: 30
+          },
+          {
+            &quot;exerciseId&quot;: &quot;one&quot;,
+            &quot;setCount&quot;: 4,
+            &quot;measurementType&quot;: &quot;TIME&quot;,
+            &quot;startingWeight&quot;: 40,
+            &quot;startingSeconds&quot;: 30
           }
         ]
       }
