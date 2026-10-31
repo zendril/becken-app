@@ -8,6 +8,22 @@
   },
   "releases": [
     {
+      "version": "0.7.5",
+      "title": "Remove exercises during a workout",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [
+        "Remove an exercise and its sets from a workout using its options menu, with confirmation before removal."
+      ],
+      "changed": [
+        "Find Substitute exercise alongside Remove exercise in each workout exercise’s options menu."
+      ],
+      "fixed": [
+        "Remove either exercise from a linked pair while keeping its partner’s sets and entered values, without needing to fill in the removed exercise."
+      ],
+      "playNotes": "Remove an exercise during a workout from its options menu. Removing one half of a linked pair keeps the other exercise and its entered sets. Your routine stays unchanged unless you choose to update it when finishing. Substitute exercise is available in the same menu."
+    },
+    {
       "version": "0.7.4",
       "title": "Workout summaries and celebrations",
       "channel": "development",
