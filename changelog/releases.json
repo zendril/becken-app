@@ -8,6 +8,21 @@
   },
   "releases": [
     {
+      "version": "0.7.4",
+      "title": "Workout summaries and celebrations",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [
+        "Finish a workout with a full-screen summary of logged weight moved, elapsed time, completed sets and exercises.",
+        "Choose from five optional celebrations, shuffle your favorites, preview each effect, or turn them off in Settings."
+      ],
+      "changed": [
+        "Keep partial sessions positive, respect the phone’s animation settings, and show how workout totals are calculated."
+      ],
+      "fixed": [],
+      "playNotes": "Finish workouts with a summary of weight moved, elapsed time, sets and exercises. Celebrate with confetti, fireworks, rings, bouncing plates or a dumbbell rocket. Choose your favorites, shuffle them, preview them or turn them off in Settings. Animations follow your phone’s animation settings."
+    },
+    {
       "version": "0.7.3",
       "title": "Clearer history and faster set logging",
       "channel": "development",
