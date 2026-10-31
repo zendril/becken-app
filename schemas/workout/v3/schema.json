@@ -1,0 +1,312 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Becken routine import v3",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "version",
+    "exercises",
+    "routine"
+  ],
+  "properties": {
+    "format": {
+      "const": "liftlog.routine"
+    },
+    "version": {
+      "const": 3
+    },
+    "exercises": {
+      "type": "array",
+      "maxItems": 10000,
+      "items": {
+        "$ref": "#/$defs/exercise"
+      }
+    },
+    "routine": {
+      "$ref": "#/$defs/routine"
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "pattern": "\\S"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "pattern": "\\S"
+    },
+    "exercise": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "$ref": "#/$defs/name"
+        },
+        "equipment": {
+          "enum": [
+            "BARBELL",
+            "DUMBBELL",
+            "MACHINE",
+            "CABLE",
+            "BODYWEIGHT",
+            "OTHER"
+          ],
+          "default": "OTHER"
+        },
+        "perHand": {
+          "type": "boolean",
+          "default": true
+        },
+        "group": {
+          "enum": [
+            "CHEST",
+            "BACK",
+            "SHOULDERS",
+            "ARMS",
+            "LEGS",
+            "CORE",
+            "FULL_BODY",
+            "OTHER",
+            null
+          ],
+          "default": null
+        },
+        "defaultMeasurementType": {
+          "enum": [
+            "REPS",
+            "TIME",
+            "DISTANCE"
+          ],
+          "default": "REPS"
+        }
+      }
+    },
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "exerciseId"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "exerciseId": {
+          "$ref": "#/$defs/id"
+        },
+        "setCount": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50,
+          "default": 3
+        },
+        "startingWeight": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100000
+        },
+        "startingReps": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 10000
+        },
+        "pairId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sweeteners": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "ECCENTRIC",
+              "CHAINS",
+              "INVERSE_CHAINS"
+            ]
+          },
+          "uniqueItems": true,
+          "maxItems": 2,
+          "not": {
+            "allOf": [
+              {
+                "contains": {
+                  "const": "CHAINS"
+                }
+              },
+              {
+                "contains": {
+                  "const": "INVERSE_CHAINS"
+                }
+              }
+            ]
+          },
+          "default": []
+        },
+        "measurementType": {
+          "enum": [
+            "REPS",
+            "TIME",
+            "DISTANCE"
+          ],
+          "default": "REPS"
+        },
+        "distanceUnit": {
+          "enum": [
+            "FT",
+            "M",
+            null
+          ]
+        },
+        "startingSeconds": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 86400
+        },
+        "startingDistance": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        }
+      },
+      "oneOf": [
+        {
+          "properties": {
+            "measurementType": {
+              "const": "REPS"
+            },
+            "distanceUnit": {
+              "type": "null"
+            },
+            "startingSeconds": {
+              "type": "null"
+            },
+            "startingDistance": {
+              "type": "null"
+            }
+          }
+        },
+        {
+          "properties": {
+            "measurementType": {
+              "const": "TIME"
+            },
+            "distanceUnit": {
+              "type": "null"
+            },
+            "startingReps": {
+              "type": "null"
+            },
+            "startingDistance": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "measurementType"
+          ]
+        },
+        {
+          "properties": {
+            "measurementType": {
+              "const": "DISTANCE"
+            },
+            "distanceUnit": {
+              "enum": [
+                "FT",
+                "M"
+              ]
+            },
+            "startingReps": {
+              "type": "null"
+            },
+            "startingSeconds": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "measurementType",
+            "distanceUnit"
+          ]
+        }
+      ]
+    },
+    "day": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "$ref": "#/$defs/name"
+        },
+        "exercises": {
+          "type": "array",
+          "maxItems": 100,
+          "items": {
+            "$ref": "#/$defs/entry"
+          }
+        }
+      }
+    },
+    "routine": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "$ref": "#/$defs/name"
+        },
+        "unit": {
+          "enum": [
+            "LB",
+            "KG"
+          ],
+          "default": "LB"
+        },
+        "days": {
+          "type": "array",
+          "maxItems": 100,
+          "items": {
+            "$ref": "#/$defs/day"
+          }
+        }
+      }
+    }
+  }
+}
