@@ -5,6 +5,6 @@
   "minimumAppVersion": "0.7.0",
   "schemaSha256": "052cbb1033e39479c225b27b8c6039e84da9136e9aae5ff0ed8a99c1df7e219b",
   "exampleSha256": "8954f30c368bfdef5a32ce686c1e631ed3ad36f0e60504c68ddcbbc254c64c28",
-  "appVersion": "0.7.3",
-  "versionCode": 7003
+  "appVersion": "0.7.4",
+  "versionCode": 7004
 }
