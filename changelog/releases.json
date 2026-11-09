@@ -8,6 +8,18 @@
   },
   "releases": [
     {
+      "version": "0.7.7",
+      "title": "More reliable release checks",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [],
+      "changed": [
+        "Reuse downloaded Android test runtimes during build checks to reduce release interruptions caused by dependency download limits."
+      ],
+      "fixed": [],
+      "playNotes": "Maintenance update: build checks reuse downloaded Android test runtimes to reduce release interruptions caused by dependency download limits."
+    },
+    {
       "version": "0.7.6",
       "title": "Export routines for AI adjustments",
       "channel": "development",
