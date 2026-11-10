@@ -8,6 +8,18 @@
   },
   "releases": [
     {
+      "version": "0.7.8",
+      "title": "Import routines from files or pasted JSON",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [
+        "Choose a JSON file or paste JSON directly when importing a routine, then review the preview before adding it."
+      ],
+      "changed": [],
+      "fixed": [],
+      "playNotes": "Import routines your way: choose a .json file or paste the JSON contents directly. Review the routine before adding it, and correct invalid JSON without losing your text. Your existing routines and workout history stay intact."
+    },
+    {
       "version": "0.7.7",
       "title": "More reliable release checks",
       "channel": "development",
