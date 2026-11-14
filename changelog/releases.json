@@ -8,6 +8,20 @@
   },
   "releases": [
     {
+      "version": "0.7.9",
+      "title": "Choose your routine order",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [
+        "Use Reorder on the Routines screen to move routines up or down. Your order saves automatically and stays with full backups."
+      ],
+      "changed": [],
+      "fixed": [
+        "Editing a routine keeps it in its chosen position instead of moving it to the bottom."
+      ],
+      "playNotes": "Arrange routines in the order you prefer. Tap Reorder on the Routines screen, then use the up and down arrows. Changes save automatically, survive restarts and travel with full backups. Editing a routine now keeps it in place; new and imported routines are added at the end."
+    },
+    {
       "version": "0.7.8",
       "title": "Import routines from files or pasted JSON",
       "channel": "development",
