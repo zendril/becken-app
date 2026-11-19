@@ -8,6 +8,22 @@
   },
   "releases": [
     {
+      "version": "0.8.0",
+      "title": "Training insights and exercise progress",
+      "channel": "development",
+      "releasedOn": null,
+      "added": [
+        "Explore workout totals, load over time, numbered activity days and completed sets by exercise group in Insights.",
+        "Track exercise progress with weight, load, reps, time or distance charts and open the saved workout behind each result.",
+        "Filter workouts and charts together by routine and date range, including All time."
+      ],
+      "changed": [
+        "Find workout history under Insights → Workouts, alongside Insights and Exercises tabs. The bottom Exercises item still opens the exercise library."
+      ],
+      "fixed": [],
+      "playNotes": "Explore your training in Insights: workout history, load trends, numbered activity days and completed sets by group. Use the Exercises tab for progress charts and tap through to saved workouts. Filter all three tabs by routine and date range, including All time. Your exercise library remains in the bottom navigation."
+    },
+    {
       "version": "0.7.9",
       "title": "Choose your routine order",
       "channel": "development",
